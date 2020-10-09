@@ -1,0 +1,290 @@
+.text_align{
+	text-align:justify !important;
+}
+.tabs_top{
+	margin-top: -10px  !important;
+}
+.card_admission {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card_admission .card_admission-heading {
+    padding: 0 20px;
+    margin: 0;
+}
+
+.card_admission .card_admission-heading.simple {
+    font-size: 20px;
+    font-weight: 300;
+    color: #777;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.card_admission .card_admission-heading.image img {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+    vertical-align: top;
+    border: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.card_admission .card_admission-heading.image .card_admission-heading-header {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card_admission .card_admission-heading.image .card_admission-heading-header h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626;
+}
+
+.card_admission .card_admission-heading.image .card_admission-heading-header span {
+    font-size: 12px;
+    color: #999999;
+}
+
+.card_admission .card_admission-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.card_admission .card_admission-media {
+    padding: 0 20px;
+    margin: 0 -14px;
+}
+
+.card_admission .card_admission-media img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card_admission .card_admission-actions {
+    min-height: 30px;
+    padding: 0 20px 20px 20px;
+    margin: 20px 0 0 0;
+}
+
+.card_admission .card_admission-comments {
+    padding: 20px;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.card_admission .card_admission-comments .comments-collapse-toggle {
+    padding: 0;
+    margin: 0 20px 12px 20px;
+}
+
+.card_admission .card_admission-comments .comments-collapse-toggle a,
+.card_admission .card_admission-comments .comments-collapse-toggle span {
+    padding-right: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card_admission-comments .media-heading {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card_admission.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card_admission.people:first-child {
+    margin-left: 0;
+}
+
+.card_admission.people .card_admission-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 170px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.card_admission.people .card_admission-top.green {
+    background-color: #53a93f;
+}
+
+.card_admission.people .card_admission-top.blue {
+    background-color: #427fed;
+}
+
+.card_admission.people .card_admission-info {
+    position: absolute;
+    top: 150px;
+    display: inline-block;
+    width: 100%;
+    height: 101px;
+    overflow: hidden;
+    background: #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card_admission.people .card_admission-info .title {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #404040;
+}
+
+.card_admission.people .card_admission-info .desc {
+    display: block;
+    margin: 8px 14px 0 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card_admission.people .card_admission-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card_admission.hovercard_admission {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(214, 224, 226, 0.2);
+	height: 275px;
+}
+
+.card_admission.hovercard_admission .card_admissionheader {
+    background: url("../images/admission/admission_1.jpg");
+    background-size: cover;
+    height: 135px;
+	margin-top: 5px;
+}
+.card_admission.hovercard_admission .card_admissionheader1 {
+    background: url("../images/admission/admission_2.jpg");
+    background-size: cover;
+    height: 135px;
+	margin-top: 5px;
+}
+.card_admission.hovercard_admission .card_admissionheader2 {
+    background: url("../images/admission/admission_3.jpg");
+    background-size: cover;
+    height: 135px;
+	margin-top: 5px;
+}
+.card_admission.hovercard_admission .card_admissionheader3 {
+    background: url("../images/admission/admission_4.jpg");
+    background-size: cover;
+    height: 135px;
+}
+.card_admission.hovercard_admission .card_admissionheader4 {
+    background: url("../images/admission/admission_5.jpg");
+    background-size: cover;
+    height: 135px;
+	margin-top: 5px;
+}
+.card_admission.hovercard_admission .card_admissionheader5 {
+    background: url("../images/admission/admission_6.jpg");
+    background-size: cover;
+    height: 135px;
+    margin-top: 5px;
+}
+.card_admission.hovercard_admission .card_admissionheader6 {
+    background: url("../images/admission/admission_7.jpg");
+    background-size: cover;
+    height: 135px;
+    margin-top: 5px;
+}
+
+.card_admission.hovercard_admission .card_admissionheader7 {
+    background: url("../images/admission/admission_8.jpg");
+    background-size: cover;
+    height: 135px;
+    margin-top: 5px;
+}
+.card_admission.hovercard_admission .avatar {
+    position: relative;
+    top:-40px;
+    margin-bottom: -50px;
+	margin-right: 160px;
+}
+
+.card_admission.hovercard_admission .avatar img {
+    width: 80px;
+    height: 80px;
+    max-width: 100px;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.5);
+}
+
+.card_admission.hovercard_admission .info {
+    padding: 4px 8px 10px;
+}
+
+.card_admission.hovercard_admission .info .title {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card_admission.hovercard_admission .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card_admission.hovercard_admission .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}

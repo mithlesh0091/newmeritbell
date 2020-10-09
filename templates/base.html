@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyDjangoApp</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body class="override">
+
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="card">
+                <div class="card-header text-black">
+                  <h2>Demo Registration</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                       <div class="col-lg-4">
+                        <a type="button" class="btn btn-block" href="{% url 'customer_register' %}">I am a customer</a>
+                       </div>
+                       <div class="col-lg-4">
+                        <a type="button" class="btn btn-block" href="{% url 'employee_register' %}">I am an employee</a>
+                       </div>
+                       <div class="col-lg-4">
+                        <a type="button" class="btn btn-block" href="{% url 'consultancy_register' %}">consultancy_register</a>
+                       </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--    <footer>-->
+<!--        <div class="container">-->
+<!--            <div class="row well ml-t">-->
+<!--                <div class="col-lg-8 col-md-8">-->
+<!--                    <h4>Developed by: <a href="https://carlofontanos.com" target="_blank">Carl Victor C. Fontanos</a></h4>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-4">-->
+<!--                    <p class="m-t">Copyright &copy <a href="https://carlofontanos.com" target="_blank">www.carlofontanos.com</a> 2017</p>-->
+<!--                    <p>All Rights Reserved.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
+</body>
+</html>

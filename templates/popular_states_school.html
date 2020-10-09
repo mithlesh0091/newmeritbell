@@ -1,0 +1,599 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+	<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Meritbell || Popular Schools</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!--====== Animate css ======-->
+   	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <!--====== Magnific Popup css ======-->
+   	 <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--====== Nice Select css ======-->
+  	<link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <!--====== Default css ======-->
+   	<link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <!--====== Style css ======-->
+	<link rel="stylesheet" href="{% static 'assets/css/testimonials.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+   	<link rel="stylesheet" href="{% static 'assets/css/hexa_grid.css' %}">
+  	<link rel="stylesheet" href="{% static 'assets/css/card_design.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+ 	<link rel="stylesheet" href="{% static 'assets/css/customstyle.css' %}">
+    <!--====== Responsive css ======-->
+	<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body style="overflow-x:hidden;">
+    <!--====== PRELOADER PART START ======-->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+{% include "header.html" %}
+    <!--====== Header Mobile PART ENDS ======-->
+       <section class="page_banner bg_cover" style="background-image: url(assets/images/banner/schools.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner_content text-center">
+					<br>
+                        <h4 class="title">Search Top <span class="text_bold_color"> Schools</span> Of India</h4>
+						<div class="row padding_top">
+							<div class="col-lg-3">
+							</div>
+							<div class="col-lg-6">
+								<div class="sidebar_search">
+									<form action="#">
+										<input type="text" placeholder="Enter Top College Name" required="">
+										<button><i class="fa fa-search"></i></button>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-3">
+							</div>
+						</div>
+						<div class="row padding_top">
+							<div class="col-lg-1">
+							</div>
+							<div class="col-lg-10">
+								<h4 class="title"><span class="counts_color">10245+</span> schools <span class="counts_color"> 27+</span> Universities  <span class="counts_color">516+</span> Cities</h4>
+							</div>
+							<div class="col-lg-1">
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== Page Banner PART ENDS ======-->
+    <section class=" pt-40 pb-20">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="section_title text-center pb-20">
+					<h3 class="main_title">Most Popular States</h3>
+				</div>
+			</div>
+		</div>
+		<ul class="gallery_box">
+			<li>
+				<a href='{% url 'schoolsp' %}'>
+
+				<img src="{% static "assets/images/state/delhi.png" %}">
+					<div class="box_data">
+						<span class="gallery_text">Delhi </span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='{% url 'schoolsp' %}'>
+				<img src="{% static "assets/images/state/maharastra.png" %}">
+					<div class="box_data">
+						<span>Maharashtra</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='{% url 'schoolsp' %}'>
+
+						<img src="{% static "assets/images/state/karnataka.png" %}">
+					<div class="box_data">
+						<span>Karnataka</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='{% url 'schoolsp' %}'>
+				<img src="{% static "assets/images/state/tamil_nadu.png" %}">
+					<div class="box_data">
+						<span>Tamil Nadu</span>
+					</div>
+				</a>
+			</li>
+			<li style="position: relative;top: -134px;">
+				<a href='{% url 'schoolsp' %}'>
+					<img src="{% static "assets/images/state/kerala.png" %}">
+					<div class="box_data">
+						<span>Kerala</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href='{% url 'schoolsp' %}'>
+					<img src="{% static "assets/images/state/haryana.png" %}">
+					<div class="box_data">
+						<span>Haryana</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<div class="col-md-12 center-block" style="text-align: center;margin-top:-130px;">
+			<div class="single_form">
+				<button class="main-btn">View All States</button>
+			</div> <!-- single form -->
+		</div>
+    </section>
+	<hr>
+	<section class="courses_area pt-10 pb-70" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+					<div class="section_title text-center pb-20">
+                        <h3 class="main_title">Popular schools</h3>
+                        <p>What do you think is better to receive after each lesson: a lovely looking badge or important skills you can immediately put into practice.</p>
+                    </div>
+                </div>
+            </div>
+           <div class="container cta-100 ">
+        <div class="container">
+          <div class="row blog">
+            <div class="col-md-12">
+              <div id="blogCarousel" class="carousel slide container-blog" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#blogCarousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+								<img src="{% static "assets/images/blog-1.jpg" %}" alt="blog>
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">VIT</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+									<img src="{% static "assets/images/blog-2.jpg" %}" alt="blog>
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">SRM</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+								<img src="{% static "assets/images/blog-3.jpg" %}" alt="blog>
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">Christ</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+									<img src="{% static "assets/images/blog-4.jpg" %}" alt="blog>
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">JAIN</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <!--.row-->
+                  </div>
+                  <!--.item-->
+                  <div class="carousel-item ">
+                    <div class="row">
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+
+										<img src="{% static "assets/images/blog-1.jpg" %}" alt="blog">
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">VIT</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+									<img src="{% static "assets/images/blog-2.jpg" %}" alt="blog">
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">SRM</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+								<img src="{% static "assets/images/blog-3.jpg" %}" alt="blog">
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">Christ</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3">
+							<div class="single_blog mt-30">
+								<div class="blog_image">
+							<img src="{% static "assets/images/blog-4.jpg" %}" alt="blog">
+								</div>
+								<div class="blog_content">
+									<div class="blog_content_wrapper">
+										<h4 class="blog_title" style="text-align:center;"><a href="#">JAIN</a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<section class="event_area_3 pt-80">
+        <div class="event_bg bg_cover" style="background-image: url({% static "assets/images/event_bg.jpg" %})"></div>
+
+
+        	<img src="" alt="blog">
+        <div class="container">
+            <div class="event_title_btn align-items-center d-md-flex justify-content-between pb-10">
+                <div class="section_title section_title_2">
+                    <h3 class="main_title">Latest News  </h3>
+                </div>
+            </div>
+			<!--<div class="row">
+				<div class="col-lg-3">
+				</div>
+				<div class="col-lg-6">
+					<div class="sidebar_search">
+						<form action="#">
+							<input type="text" placeholder="Enter Address / Mobile Number">
+							<button style="width:128px;">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-3">
+				</div>
+			</div>-->
+        </div>
+		<br>
+        <div class="container-fluid">
+            <div class="row event_active_3">
+                <div class="col-lg-4">
+                    <div class="single_event_3">
+                        <div class="event_image">
+                        <img src="{% static "assets/images/event-3-1.jpg" %}" alt="event">
+                        </div>
+                        <div class="event_content d-flex">
+                            <div class="event_meta media-body">
+                                <span class="location"> Manipal Institute of Technology application closing soon.</span>
+                                <h4 class="event_title"><a href="#">EXAMS</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single_event_3">
+                        <div class="event_image">
+                   <img src="{% static "assets/images/event-3-2.jpg" %}" alt="event">
+                        </div>
+                        <div class="event_content d-flex">
+                            <div class="event_meta media-body">
+                                <span class="location">Neet Admint card related.</span>
+                                <h4 class="event_title"><a href="#">COLLEGES </a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single_event_3">
+                        <div class="event_image">
+                           <img src="{% static "assets/images/event-3-3.jpg" %}" alt="event">
+                        </div>
+                        <div class="event_content d-flex">
+                            <div class="event_meta media-body">
+                                <span class="location">JEE Advance result declared.</span>
+                                <h4 class="event_title"><a href="#">COURSES </a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single_event_3">
+                        <div class="event_image">
+                           <img src="{% static "assets/images/features-3.png" %}" alt="event">
+                        </div>
+                        <div class="event_content d-flex">
+                            <div class="event_meta media-body">
+                                <span class="location"> Manipal Institute of Technology application closing soon.</span>
+                                <h4 class="event_title"><a href="#">COACHING</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4">
+                    <div class="single_event_3">
+                        <div class="event_image">
+                          <img src="{% static "assets/images/features-2.png" %}" alt="event">
+                        </div>
+                        <div class="event_content d-flex">
+                            <div class="event_meta media-body">
+                                <span class="location"> Manipal Institute of Technology application closing soon.</span>
+                                <h4 class="event_title"><a href="#">TRENDING</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single_event_3">
+                        <div class="event_image">
+                        <img src="{% static "assets/images/features-1.png" %}" alt="event">
+                        </div>
+                        <div class="event_content d-flex">
+                            <div class="event_meta media-body">
+                                <span class="location">Neet Admint card related.</span>
+                                <h4 class="event_title"><a href="#">ARTICLES</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<div class="testimonials-wrap">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section_title text-center pb-20">
+						<h3 class="main_title">Student / Parents Reviews</h3>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-testimonial owl-carousel">
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/82.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Mark Huff</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/83.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Rodel Golez</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/84.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Ken Bosh</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/85.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Racky Henderson</p>
+							<span class="position">Father</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/86.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Henry Dee</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/87.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Mark Huff</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/88.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Rodel Golez</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/89.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Ken Bosh</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/90.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Racky Henderson</p>
+							<span class="position">Father</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/91.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Henry Dee</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="testimonial-box d-flex">
+						<div class="user-img" style="background-image: url(https://randomuser.me/api/portraits/men/92.jpg)">
+						</div>
+						<div class="text pl-4">
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p class="name">Mark Huff</p>
+							<span class="position">Businesswoman</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--====== Footer PART START ======-->
+  {% include "footer.html" %}
+	<script>
+		$('.carousel-testimonial').owlCarousel({
+			loop:true,
+			margin:0,
+			responsiveClass:true,
+			responsive:{
+				0:{
+					items:1,
+					nav:true
+				},
+				600:{
+					items:3,
+					nav:false
+				},
+				1000:{
+					items:3,
+					nav:true,
+					loop:false
+				}
+			}
+		})
+	</script>
+    <!--====== Footer PART ENDS ======-->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== jquery js ======-->
+    <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+	<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <!--====== Slick js ======-->
+     <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!--====== Counter Up js ======-->
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <!--====== Nice Select js ======-->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <!--====== Count Down js ======-->
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <!--====== Appear js ======-->
+     <script src="{% static 'assets/js/jquery.appear.min.js' %}"></script>
+    <!--====== Main js ======-->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>

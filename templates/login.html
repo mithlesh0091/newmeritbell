@@ -1,0 +1,236 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>MeritBell</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/customize1.css' %}">
+    <!--====== Animate css ======-->
+   	 <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!--====== Fontawesome css ======-->
+ 	<link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <!--====== Slick css ======-->
+  	<link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <!--====== Style css ======-->
+     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+   	<link rel="stylesheet" href="{% static 'assets/css/customstyle.css' %}">
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!---------------------search-------------------------->
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!---------------------END search-------------------------->
+    <!-------TABS-------------->
+
+    <!---------END ENDS------------------------------>
+<style>
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+}
+
+input.btn.btn-success.btn-send.login-button {
+    background-color: #0ad0f4;
+    border-color: #0ad0f4;
+    background-color: #0ad0f4;
+    border-color: #0ad0f4;
+    display: block;
+    width: 100%;
+}
+button.w3-bar-item.w3-button.btn.btn-primary {
+    background: #117a8b;
+}
+
+.social {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 82%;
+}
+.social h4 {
+  color: #666;
+  font-weight: normal;
+  margin: 30px 0 20px;
+  text-align: center;
+}
+.social ul{
+  display: block;
+}
+.social ul li{
+  list-style: none;
+  float: left;
+  width: 31.33%;
+  margin: 0 1%;
+}
+.social ul li a{
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px;
+  display: block;
+  text-align: center;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.social ul li a:hover{opacity: .8;}
+.social ul li a.facebook{
+   background: #3a589a;
+}
+.social ul li a.twitter {
+  background: #4099ff;
+  }
+ .social ul li a.google-plus {
+  background: #e9544f;
+}
+.divider{
+  background: #ddd;
+  height: 2px;
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+}
+.divider span{
+  width: 30px;
+  height: 20px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  top: -12px;
+  text-align: center;
+  color: #999;
+}
+@media (max-width: 480px){
+  form#login-form {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+</style>
+</head>
+<body>
+{% include "header.html" %}
+<div style="background-image: url(&quot;http://w3iscool.com/wp-content/themes/pinbin/images/wood.png&quot;);">
+<div style="margin: 0px 0px 120px 0px;padding: 80px 0px 0px 0px;"></div>
+<div class="container ">
+<div class="container">
+
+  <div class="row">
+
+
+ <div style="width: 500px;margin: auto;padding: 21px 12px 12px 12px;border: 1px solid #6ba6e1!important;background: #fff;opacity: 0.8;">
+    <div class="col-sm-12">
+    <p class="text-center" style="color: #007bff!important;font-size: 13px;font-weight: 500;">Hi,Please Sign in on World's Best Potal MeritBell.com</p>
+
+       <form method="post" action="{% url 'login' %}">
+          {% csrf_token %}
+
+<div class="form-group">
+         <h2 style="margin: 0; color: #000; font-weight: 600;font-size: 13px;text-align: center;margin: 0;">Connect with...</h2>
+          </div>
+
+<div class="social">
+
+        <ul>
+          <li>
+          <a href="" class="facebook">
+            <span class="fa fa-facebook"></span>
+          </a>
+          </li>
+          <li>
+            <a href="" class="twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="google-plus">
+              <span class="fa fa-google-plus"></span>
+            </a>
+          </li>
+        </ul>
+       </div>
+
+
+<div class="divider">
+         <span>or</span>
+       </div>
+
+
+  <div class="form-group">
+    <label for="email"></label>
+      <input type="text" name="username" class="form-control" id="text" placeholder="username">
+  </div>
+  <div class="form-group">
+    <label for="pwd"></label>
+    <input type="password" name="password" class="form-control" id="pwd" placeholder="Password">
+  </div>
+   <div class="form-group">
+  <h2 style="font-size: 12px!important;bottom: 12px;text-align: right;color: #0ad0f4;font-weight: 500;"><a href="">Forgot Password?</a></h2>
+  </div>
+<div class="text-center">  <input type="submit" class="btn btn-success btn-send login-button" value="Submit"></div>
+<p class="text-center tb-text-grey mar-b0 display-6"><span class="ng-binding">Need an account?</span>
+<a href="#" class="btn outline-none btn-sm text-primary pb-2 ng-binding">Sign Up</a></p>
+</form>
+
+    </div>
+
+<div>
+ {% for message in messages %}
+    <h3>{{message}}</h3>
+    {% endfor %}
+
+</div>
+
+
+  </div>
+
+
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="row" style="
+    margin: 40px 40px 40px 40px;
+">
+      <div></div>
+      </div>
+      </div>
+      </div>
+</div>
+<!-----------search----------------------------------------------------->
+ {% include "footer.html" %}
+<!-----------search----------------------------------------------------->
+</body>
+</html>

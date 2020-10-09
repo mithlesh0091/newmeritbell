@@ -1,0 +1,2352 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <title> Meritbell || Home</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="" />
+    <!-- Favicon icon -->
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="{% static 'dashboard/css/style.css' %}">
+
+
+	<style>
+		html {
+		  scroll-behavior: smooth;
+		}
+		#more {display: none;}
+		img.user-image {
+       height: 50px;
+    width: 50px !important;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+	</style>
+</head>
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar menupos-fixed menu-light ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+						<label><span class="pcoded-micon"><i class="feather icon-user"></i> Welcome,{{user.first_name}}</label>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+					    <label>Dashboard</label>
+					</li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#school_profile" >Edit School Profile</a></li>
+					        <li><a href="#basic_information" >Basic Information</a></li>
+					        <li><a href="#contact" >Contact / Address Information</a></li>
+					        <li><a href="#facilities">Facilities & Infrastructure</a></li>
+					        <li><a href="#academic">Academic Information</a></li>
+					        <li><a href="#admission_procedure">Admission Procedure</a></li>
+					        <li><a href="#admission_document">Admission Document & Eligibility</a></li>
+					        <li><a href="#sports">Sports & Extra-curricular Activities</a></li>
+					        <li><a href="#award">Award & Recognition</a></li>
+					        <li><a href="#fees_structure">Fees Structure</a></li>
+					        <li><a href="#hostel">Hostel</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-question" aria-hidden="true"></i></span><span class="pcoded-mtext">FAQ</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-star" aria-hidden="true"></i></span><span class="pcoded-mtext">Reviews & Ratings</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span class="pcoded-mtext">Subscriptions</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span><span class="pcoded-mtext">Leads</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Application Form</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-briefcase" aria-hidden="true"></i></span><span class="pcoded-mtext">Career / Jobs</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-snowflake" aria-hidden="true"></i></span><span class="pcoded-mtext">Campaign Advertisment</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="pcoded-mtext">Contact Us</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-info-circle" aria-hidden="true"></i></span><span class="pcoded-mtext">Help</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-question-circle" aria-hidden="true"></i></span><span class="pcoded-mtext">Enquire</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-university" aria-hidden="true"></i></span><span class="pcoded-mtext">Admission</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-calendar" aria-hidden="true"></i></span><span class="pcoded-mtext">Events</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-address-card" aria-hidden="true"></i></span><span class="pcoded-mtext">Refer Other Schools</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+				</ul>
+				<div class="card text-center">
+					<div class="card-block">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i class="feather icon-sunset f-40"></i>
+						<h6 class="mt-3">Help?</h6>
+						<p>Please contact us on our email for need any support</p>
+						<a href="#!" target="_blank" class="btn btn-primary btn-sm text-white m-0">Support</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed header-blue">
+		<div class="m-header">
+			<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+			<a href="#!" class="b-brand">
+				<!-- ========   change your logo hear   ============ -->
+				<img src="assets/images/logo.png" style="height: 50px;" alt="" class="logo">
+				<img src="assets/images/logo-icon.png" alt=""  style="height: 50px;"  class="logo-thumb">
+			</a>
+			<a href="#!" class="mob-toggler">
+				<i class="feather icon-more-vertical"></i>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+					<div class="search-bar">
+						<input type="text" class="form-control border-0 shadow-none" placeholder="Search here">
+						<button type="button" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<div class="dropdown">
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i><span class="badge bg-danger"><span class="sr-only"></span></span></a>
+						<div class="dropdown-menu dropdown-menu-right notification">
+							<div class="noti-head">
+								<h6 class="d-inline-block m-b-0">Notifications</h6>
+								<div class="float-right">
+									<a href="#!" class="m-r-10">mark as read</a>
+									<a href="#!">clear all</a>
+								</div>
+							</div>
+							<ul class="noti-body">
+								<li class="n-title">
+									<p class="m-b-0">NEW</p>
+								</li>
+								<li class="notification">
+									<div class="media">
+										<!--<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">-->
+										<img src="{{request.user.customer.image.url}}"  class="user-image" alt="User Image">
+										<div class="media-body">
+											<p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
+											<p>New ticket Added</p>
+										</div>
+									</div>
+								</li>
+								<li class="n-title">
+									<p class="m-b-0">EARLIER</p>
+								</li>
+								<li class="notification">
+									<div class="media">
+									<img src="{{request.user.customer.image.url}}"  class="user-image" alt="User Image">
+										<div class="media-body">
+											<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
+											<p>Prchace New Theme and make payment</p>
+										</div>
+									</div>
+								</li>
+								<li class="notification">
+									<div class="media">
+									<img src="{{request.user.customer.image.url}}"  class="user-image" alt="User Image">
+										<div class="media-body">
+											<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
+											<p>currently login</p>
+										</div>
+									</div>
+								</li>
+								<li class="notification">
+									<div class="media">
+									<img src="{{request.user.customer.image.url}}"  class="user-image" alt="User Image">
+										<div class="media-body">
+											<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+											<p>Prchace New Theme and make payment</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="noti-footer">
+								<a href="#!">show all</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown drp-user">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="{{request.user.customer.image.url}}"  class="user-image" alt="User Image">
+						</a>
+						<div class="dropdown-menu dropdown-menu-right profile-notification">
+							<div class="pro-head">
+							<img src="{{request.user.customer.image.url}}"  class="user-image" alt="User Image">
+								<span></span>
+								<a href="auth-signin.html" class="dud-logout" title="Logout">
+									<i class="feather icon-log-out"></i>
+								</a>
+							</div>
+							<ul class="pro-body">
+								<li><a href="{% url 'profile' %}" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+								<li><a href="{% url 'change_pass' %}" class="dropdown-item"><i class="feather icon-settings"></i>Setting</a></li>
+								<li><a href="{% url 'admin_contact' %}" class="dropdown-item"><i class="feather icon-mail"></i>Contact</a></li>
+									{% if user.is_authenticated %}
+								<li><a href="{% url 'logout' %}" class="dropdown-item"><i class="feather icon-lock"></i>Logout</a></li>
+								 {% endif %}
+								    <!--<li><a class="dropdown-item" href="{% url 'profile' %}"><i class="fa fa-user" style="padding: 0px 5px 0px 0px;"></i>Profile</a></li>-->
+            <!--                    	<li><a class="dropdown-item" href="{% url 'change_pass' %}"><i class="fa fa-cog" style="padding: 0px 5px 0px 0px;"></i>Setting</a></li>-->
+            <!--                    	<li><a class="dropdown-item" href="{% url 'admin_contact' %}"><i class="fa fa-address-card-o" style="padding: 0px 5px 0px 0px;">-->
+            <!--                    	Contact</a></li>-->
+								<!--<li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>-->
+
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- [ Header ] end -->
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Dashboard</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.php"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Dashboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+		<!-- [ Main Content ] start -->
+        <div class="row" id="school_profile">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>School Profile</h5>
+                        <hr>
+						<div class="alert alert-danger alert-dismissible fade show" role="alert">
+							<strong>Your institute profile </strong> is not visible to students & visitors if :- any of the following are in compeleted.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Mobile / Phone Number *" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Mobile / Phone Number(Alternative) *" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="email" class="form-control" id="email" placeholder="Email Id *" name="email">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<input type="email" class="form-control" id="email" placeholder="Email Id(Alernative) * " name="email">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1"></label>
+										<textarea placeholder="Address / Contact" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-primary">Update</button>
+						</form>
+						<br>
+						<div class="alert alert-danger alert-dismissible fade show" role="alert">
+							<strong>Pending ! </strong>  Your account would take 2 business days for verification,it will get live post verification.However ,you can keep entering and saving your data,and can also preview the page using the preview option available at the top of the right column of the page to find out how would it appears after going live.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row" id="basic_information">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Basic Information ( Profile Managment )</h5>
+                        <hr>
+						<form method = "POST" action="{% url 'Basic_information' %}" enctype="multipart/form-data">
+                            {% csrf_token %}
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">School Name *</label>
+										<input type="text" name="Basic_information_school_name" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">School Short Name *</label>
+										<input type="text" name="Basic_information_school_short_name" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">Establishment Year</label>
+										<input type="date" name="date" class="form-control" id="email" placeholder="Date" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">USP(Tag line of the School)</label>
+										<input type="text" name="Basic_information_tag_line_of_school" class="form-control" id="email" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">School Website url(ex:www.Meritbells.com)</label>
+										<input type="text"  name="Basic_information_url" class="form-control" id="email" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">School Trust / Socity Name</label>
+										<input type="text" name="Basic_information_school_trusty_socity" class="form-control" id="email" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact">School Logo(Size limit:5MB)</label>
+									<div class="form-group custom-file">
+									   <input type="file" name="Basic_information_school_logo" class="custom-file-input" id="customFile" required>
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact">School cover Image:(Size limit:5MB)</label>
+									<div class="form-group custom-file">
+									   <input type="file" name="Basic_information_school_cover_img" class="custom-file-input" id="customFile" required>
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact">Upload Brochure/Prospecture</label>
+									<div class="form-group custom-file">
+									   <input type="file" name="Basic_information_school_upload_brochure" class="custom-file-input" id="customFile" required>
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+							</div>
+							<br>
+							<button type="submit" class="btn  btn-warning">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] start -->
+        <div class="row" id="contact">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Address / Location Details</h5>
+                        <hr>
+						<form id="" method="post" action="{% url 'contactaddress' %}">
+                        {% csrf_token %}
+							<div class="row">
+
+							    <div class="col-sm-12">
+									<label for="Region"><strong>Select Region  :  </strong></label>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline11" name="optradioaddr" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline11">INDIA</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline2" name="optradioaddr" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline2">ABOARD</label>
+									</div>
+								</div>
+							 <!--   <div class="col-sm-12">-->
+								<!--	<label for="Region"><strong>Select Region  :  </strong></label>-->
+								<!--	<div class="custom-control custom-radio custom-control-inline">-->
+								<!--		<input type="radio" id="customRadioInline1" name="optradioaddr" class="custom-control-input">-->
+								<!--		<label class="custom-control-label" for="customRadioInline11">INDIA</label>-->
+								<!--	</div>-->
+								<!--	<div class="custom-control custom-radio custom-control-inline">-->
+								<!--		<input type="radio" id="customRadioInline2" name="optradioaddr" class="custom-control-input">-->
+								<!--		<label class="custom-control-label" for="customRadioInline2">ABOARD</label>-->
+								<!--	</div>-->
+								<!--</div>-->
+
+
+								<br>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Country : </strong></label>
+										<input type="text" name="addrcountry" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>State : </strong></label>
+										<input type="text" name="addrstate" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>District/City: : </strong></label>
+										<input type="text" name="addrDistrict" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Town/Main Area: : </strong></label>
+										<input type="text" name="addrmain_toen_area" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Sub Area : </strong></label>
+										<input type="text" name="addrsub_area"  class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Landmark : </strong></label>
+										<input type="text" name="addrlanmark" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Pin Code : </strong></label>
+										<input type="text" name="addr_pincode" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Get My Location : </strong></label>
+										<input type="text" name="addr_location" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1"><strong>Address : </strong></label>
+										<textarea placeholder="Address" name="addr_addres" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<h5>How to reach ?:- </h5>
+									<hr>
+									<label for=""><strong>Distance from Airport : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_name_fap" class="form-control" id="contact" placeholder="Name" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_name_fap_distance" class="form-control" id="contact" placeholder="Distance / kms" required>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<input type="time" name="addr_name_fap_time" class="form-control" id="contact" placeholder="Time" required>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<input type="text" name="addr_name_fap_latidue" class="form-control" id="contact" placeholder="Latitude" required>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<input type="text" name="addr_name_fap_longatitide" class="form-control" id="contact" placeholder="Latitude" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Distance from Railway Station 1: </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_name_rail_name1" class="form-control" id="contact" placeholder="Name" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_name_rail_distance" class="form-control" id="contact" placeholder="Distance ( kms )" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="time" name="addr_name_rail_time" class="form-control" id="contact" placeholder="Time" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Distance from Railway Station 2: </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_name_rail_name2" class="form-control" id="contact" placeholder="Name" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text"  name="addr_name_rail_distance2" class="form-control" id="contact" placeholder="Distance ( kms )" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="time"  name="addr_name_rail_time2" class="form-control" id="contact" placeholder="Time" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Distance from Bus Station : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_name_bus_name" class="form-control" id="contact" placeholder="Name" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_name_bus_distancr" class="form-control" id="contact" placeholder="Distance ( kms )" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="time" name="addr_name_bus_time" class="form-control" id="contact" placeholder="Time" required>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Bus Number : </strong></label>
+										<input type="text" name="addr_nus_nof" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>From : </strong></label>
+										<input type="text" name="addr_nus_to_railway" class="form-control" id="contact" placeholder="Railway Station" required>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>To : </strong></label>
+										<input type="text" name="addr_nus_to_school" class="form-control" id="contact" placeholder="School" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<h5>Contact Details :</h5>
+									<hr>
+									<label for=""><strong>Contact Person Details : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_contact_name" class="form-control" id="contact" placeholder="Name" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_contact_mobno" class="form-control" id="contact" placeholder="Mobile No" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="email" name="addr_contact_email" class="form-control" id="contact" placeholder="Email" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_contact_designation" class="form-control" id="contact" placeholder="Designation" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Principal : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_contact_principal_name" class="form-control" id="contact" placeholder="Name" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_contact_principal_mobno" class="form-control" id="contact" placeholder="Mobile No" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="email" name="addr_contact_principal_email" class="form-control" id="contact" placeholder="Email" required >
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_contact_principal_mobhs" class="form-control" id="contact" placeholder="contact" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Chairman-Director : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_chairman_dir_name" class="form-control" id="contact" placeholder="Name" required >
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_chairman_dir_mobno" class="form-control" id="contact" placeholder="Mobile No" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="email" name="addr_chairman_dir_email" class="form-control" id="contact" placeholder="Email" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" name="addr_chairman_dir_hideshow" class="form-control" id="contact"  placeholder="contact" required >
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Offical : </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Name : </strong></label>
+										<input type="text" name="addr_official_name" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Email : </strong></label>
+										<input type="text" name="addr_official_email" class="form-control" id="contact" placeholder="" required>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Fax : </strong></label>
+										<input type="text" name="addr_official_fax" class="form-control" id="contact" placeholder="13235551234@efaxsend.com" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1"><strong>About School / View / School / Descriptiopn : </strong></label>
+										<textarea placeholder="Address"  name="schooldescription" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+									</div>
+								</div>
+									<div class="col-sm-6">
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1"><strong>Title: </strong></label>
+										<input type="text" name="schooldescription_title" class="form-control" id="schooldescription_title" placeholder="Title" required>
+									</div>
+								</div>
+
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1"><strong>Topics : </strong></label>
+										<textarea placeholder="Address"  name="schooldescription_title_topic" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+									</div>
+								</div>
+							</div>
+							 <div class="col-md-12 col-md-offset-0 text-center">
+
+            <input id="b3" type="submit" value="save" class="btn btn-success">
+ </div>
+							<!--<button type="submit" class="btn  btn-info">Save</button>-->
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] start -->
+        <div class="row" id="facilities">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Facilities & Amenities</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck1">
+											<label class="custom-control-label" for="customCheck1"> Activity center</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck2">
+											<label class="custom-control-label" for="customCheck2"> Computer Labs </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck3">
+											<label class="custom-control-label" for="customCheck3"> Library</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck4">
+											<label class="custom-control-label" for="customCheck4"> Laboratories </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck5">
+											<label class="custom-control-label" for="customCheck5"> Canteen</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck6">
+											<label class="custom-control-label" for="customCheck6"> Transport </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck7">
+											<label class="custom-control-label" for="customCheck7"> Medical</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck8">
+											<label class="custom-control-label" for="customCheck8"> Lockers </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck9">
+											<label class="custom-control-label" for="customCheck9"> CCTV </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck10">
+											<label class="custom-control-label" for="customCheck10"> Audotorium</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck11">
+											<label class="custom-control-label" for="customCheck11"> Seminar Hall </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck12">
+											<label class="custom-control-label" for="customCheck12"> Gymnasiumn</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck13">
+											<label class="custom-control-label" for="customCheck13"> Play Ground </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck14">
+											<label class="custom-control-label" for="customCheck14"> Drinking Water</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck15">
+											<label class="custom-control-label" for="customCheck15"> Sports Facilities </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck16">
+											<label class="custom-control-label" for="customCheck16"> Music & Dance </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck17">
+											<label class="custom-control-label" for="customCheck17"> Stationary Shop</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck18">
+											<label class="custom-control-label" for="customCheck18"> WI-FI </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck19">
+											<label class="custom-control-label" for="customCheck19"> Parking Area</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck20">
+											<label class="custom-control-label" for="customCheck20"> Security </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck21">
+											<label class="custom-control-label" for="customCheck21"> Guard </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck22">
+											<label class="custom-control-label" for="customCheck22"> Fire Extinguihev</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck23">
+											<label class="custom-control-label" for="customCheck23"> Hygienic </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck12">
+											<label class="custom-control-label" for="customCheck12"> Washroom</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck24">
+											<label class="custom-control-label" for="customCheck24"> Hostel </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck25">
+											<label class="custom-control-label" for="customCheck25"> Swimming Pool</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck26">
+											<label class="custom-control-label" for="customCheck26"> Splash Pool </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck27">
+											<label class="custom-control-label" for="customCheck27"> Other </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Infra structure and Campus : </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Campus Images</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Campus Video</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Campus 360 °</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Saftey & Security</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Conteen / Stationrary Shop</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Parking upload</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">School Buildup Area :</label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Enter Youtube Video URLS : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact"><strong>Describe yourself here...</strong> </label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-primary">Update</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] start -->
+        <div class="row" id="academic">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Academic Information</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-12">
+									<label for="Region"><strong>School Shifts :  </strong></label>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline12" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline12">Shifts 1 (Morning)</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline4">Shifts 2 (Evening)</label>
+									</div>
+								</div>
+								<br>
+								<div class="col-sm-12">
+									<label for=""><strong>Select School Classes : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck28">
+											<label class="custom-control-label" for="customCheck28"> Toodler Program</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck29">
+											<label class="custom-control-label" for="customCheck29"> Playgroup </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck30">
+											<label class="custom-control-label" for="customCheck31"> Pre-Nursery</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck32">
+											<label class="custom-control-label" for="customCheck32"> Nursery </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck33">
+											<label class="custom-control-label" for="customCheck33"> Pre-KG</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck34">
+											<label class="custom-control-label" for="customCheck34"> KG </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck35">
+											<label class="custom-control-label" for="customCheck35"> Sports Facilities</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck36">
+											<label class="custom-control-label" for="customCheck36"> LKG </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck37">
+											<label class="custom-control-label" for="customCheck37"> UKG </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck38">
+											<label class="custom-control-label" for="customCheck38"> LKG 1</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck39">
+											<label class="custom-control-label" for="customCheck39"> FS 1 </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck40">
+											<label class="custom-control-label" for="customCheck40"> FS 2</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck41">
+											<label class="custom-control-label" for="customCheck13"> PP 1 </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck42">
+											<label class="custom-control-label" for="customCheck42"> PP 2</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck43">
+											<label class="custom-control-label" for="customCheck43"> Prep </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck44">
+											<label class="custom-control-label" for="customCheck44"> Class1 (I) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck45">
+											<label class="custom-control-label" for="customCheck45"> Class2 (II)</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck46">
+											<label class="custom-control-label" for="customCheck46"> Class3 (III) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck47">
+											<label class="custom-control-label" for="customCheck47"> Class4(IV)</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck48">
+											<label class="custom-control-label" for="customCheck48"> Class5 (V) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck49">
+											<label class="custom-control-label" for="customCheck49"> Class6(VI) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck50">
+											<label class="custom-control-label" for="customCheck50"> Class7 (VII)</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck51">
+											<label class="custom-control-label" for="customCheck51"> Class8 (VIII) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck52">
+											<label class="custom-control-label" for="customCheck52"> Class9 (XI)</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck53">
+											<label class="custom-control-label" for="customCheck53"> Class10 (X) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck54">
+											<label class="custom-control-label" for="customCheck54"> Class11 (XI) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck55">
+											<label class="custom-control-label" for="customCheck55"> Class12 (XII) </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Select : </strong></label>
+								</div>
+								<div class="col-sm-6">
+									<select class="form-control" id="exampleFormControlSelect11">
+										<option value="">Grade from (School Classes From)</option>
+										<option>A</option>
+										<option>B</option>
+										<option>C</option>
+										<option>D</option>
+										<option>E</option>
+									</select>
+								</div>
+								<div class="col-sm-6">
+									<select class="form-control" id="exampleFormControlSelect11">
+										<option value="">Grade to (School Classes To)</option>
+										<option>A</option>
+										<option>B</option>
+										<option>C</option>
+										<option>D</option>
+										<option>E</option>
+									</select>
+								</div>
+								<div class="col-sm-12">
+								<br>
+									<label for=""><strong>Library : </strong></label>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact"><strong>Upload Library Picture :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact"><strong>Upload Labaratory Picture  :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-6">
+								<br>
+									<div class="form-group">
+										<label for="contact">Details :</label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-6">
+								<br>
+									<div class="form-group">
+										<label for="contact">Sylabus Details :</label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Competitive Exams Offered : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck56">
+											<label class="custom-control-label" for="customCheck56">JEE Mains</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck57">
+											<label class="custom-control-label" for="customCheck57">NEET</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck58">
+											<label class="custom-control-label" for="customCheck58">CET</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck59">
+											<label class="custom-control-label" for="customCheck59">COMED-K</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck60">
+											<label class="custom-control-label" for="customCheck60">Activity Center</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck61">
+											<label class="custom-control-label" for="customCheck61">CLAT</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck62">
+											<label class="custom-control-label" for="customCheck62">NATA</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck63">
+											<label class="custom-control-label" for="customCheck63">Others</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>School clubs : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck56">
+											<label class="custom-control-label" for="customCheck56">JEE Mains</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck57">
+											<label class="custom-control-label" for="customCheck57">NEET</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck58">
+											<label class="custom-control-label" for="customCheck58">CET</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck59">
+											<label class="custom-control-label" for="customCheck59">COMED-K</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck60">
+											<label class="custom-control-label" for="customCheck60">Activity Center</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck61">
+											<label class="custom-control-label" for="customCheck61">CLAT</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck62">
+											<label class="custom-control-label" for="customCheck62">NATA</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck63">
+											<label class="custom-control-label" for="customCheck63">Others</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>School Timing :  </strong></label>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline5"> Summer Timming</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline6" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline6"> Winter Timming</label>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									 <div class="table-responsive">
+										<table class="table table-bordered table-striped table-highlight">
+										  <thead>
+											<th>Day</th>
+											<th>Mon</th>
+											<th>Tue</th>
+											<th>Wed</th>
+											<th>Thu</th>
+											<th>Fri</th>
+											<th>Sat</th>
+											</thead>
+										  <tbody>
+											<tr>
+												<th scope="row">Morning Time from</th>
+											  <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											 <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											   <td><input type="text" class="form-control" value="" /></td>
+											</tr>
+										  </tbody>
+												<tbody>
+											<tr>
+												 <th scope="row">To Evening time</th>
+											  <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											 <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											   <td><input type="text" class="form-control" value="" /></td>
+											</tr>
+										  </tbody>
+												 <tbody>
+											<tr>
+												 <th scope="row">Custom Text</th>
+											  <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											 <td><input type="text" class="form-control" value="" /></td>
+											  <td><input type="text" class="form-control" value="" /></td>
+											   <td><input type="text" class="form-control" value="" /></td>
+											</tr>
+										  </tbody>
+										</table>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact"><strong> School Holidays & Calendar...</strong> </label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Student Strenght & Teaching Staff : </strong></label>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>No.of Books : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Student-Teacher Ratio : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Average No. of Students per class : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Total No. of Teachers : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck64">
+											<label class="custom-control-label" for="customCheck64">AC Classrooms</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck65">
+											<label class="custom-control-label" for="customCheck65">Non-AC Classrooms</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="table-responsive">
+										<table class="table table-bordered table-striped table-highlight">
+										  <thead>
+											<tr><th>Class</th>
+											<th>Kinder garden</th>
+											<th>1-5</th>
+											<th>6-8</th>
+											<th>9-10th</th>
+											<th>After 10th-12th</th>
+											</tr></thead>
+										  <tbody>
+											<tr>
+												<th scope="row">Student Strength</th>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+												<td><input type="text" class="form-control" value=""></td>
+											</tr>
+										  </tbody>
+										</table>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact"><strong> Write about Teacher...</strong> </label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-primary">Update</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] start -->
+        <div class="row" id="admission_procedure">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Admission Procedure</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Academic Year : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="Academic Year" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Admission Period : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="Start" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>District/City : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="End" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>Facility for online admission application :  </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customswitch1">
+										<label class="custom-control-label" for="customswitch1"> Yes</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customswitch2">
+										<label class="custom-control-label" for="customswitch2"> No</label>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>Facility to pay admission online :  </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customswitch3">
+										<label class="custom-control-label" for="customswitch3"> Yes</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customswitch4">
+										<label class="custom-control-label" for="customswitch4"> No</label>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>Admission open :  </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customswitch5">
+										<label class="custom-control-label" for="customswitch5"> Yes</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="customswitch6">
+										<label class="custom-control-label" for="customswitch6"> No</label>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong> Admission page url: : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Admission Contact Person : </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name " name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Mobile No : (10 - digit - only )  " name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="email" class="form-control" id="contact" placeholder="Email Id  " name="contact">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+		<div class="row" id="admission_document">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Admission Document & Eligibility :</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong> School Admission Details and Procedure :</strong> </label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Admission Eligibility Criteria :</strong> </label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong> Documents Required for Admission :</strong> </label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Age Creteria :</strong> </label>
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>If PUC:>Last year Cut-offs : </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Arts : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Science : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="PCM / PCB" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Commerce : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="Commerce" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>If PUC:>Minimum cut-off Eligilibility : </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Arts : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Science : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="PCM / PCB" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Commerce : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="Commerce" name="contact">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] end -->
+		<div class="row" id="sports">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Sports and extra-curricular activites : </h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-12">
+									<label for=""><strong>Sports and Extra-Curricular Activity : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck66">
+											<label class="custom-control-label" for="customCheck66"> Cricket </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck67">
+											<label class="custom-control-label" for="customCheck67"> Football </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck68">
+											<label class="custom-control-label" for="customCheck68"> Hockey </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck69">
+											<label class="custom-control-label" for="customCheck69"> Canteen</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck70">
+											<label class="custom-control-label" for="customCheck70"> Golf  </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck71">
+											<label class="custom-control-label" for="customCheck71"> Others</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Outdoor Sports Available : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck72">
+											<label class="custom-control-label" for="customCheck72"> Chess</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck73">
+											<label class="custom-control-label" for="customCheck73"> Carrom</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck74">
+											<label class="custom-control-label" for="customCheck74"> Bedminton</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck75">
+											<label class="custom-control-label" for="customCheck75"> Tennis</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck76">
+											<label class="custom-control-label" for="customCheck76"> Boxing </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck77">
+											<label class="custom-control-label" for="customCheck77"> Othere </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Sports facilities Available : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck78">
+											<label class="custom-control-label" for="customCheck78"> Kids Play Area </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck79">
+											<label class="custom-control-label" for="customCheck79"> Toy Room</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck80">
+											<label class="custom-control-label" for="customCheck80"> Cricket Ground </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck81">
+											<label class="custom-control-label" for="customCheck81"> Swimming pool/Spalash</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck82">
+											<label class="custom-control-label" for="customCheck82"> Othere </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact"><strong>Upload Picture for :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+							</div>
+							<br>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] end -->
+		<div class="row" id="award">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Awards & Recognition</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>National Ranking : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Ranking Wise :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Upload File :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> State Ranking :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Ranking Wise :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Upload File :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] end -->
+		<div class="row" id="fees_structure">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Fee Structure</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-12">
+									<label for=""><strong>Admission fees (class wise): </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Class Fee :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Security Fee :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Other Fee :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Application/Registration fee :</strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Class Fee  :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Transporation fee( Distance wise ) :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Fee for day school :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Application/Registration Fees :</strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong> Admission Application Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Security deposite Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong> Extra Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Yearly Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Fee Structure for International Boarding Students :</strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong> Admission Application Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Security deposite Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong> Extra Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="In USD" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Other Fees :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="In USD" name="contact">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] end -->
+		<div class="row" id="hostel">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Hostel / Accomodation </h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-12">
+									<label for=""><strong>Hostal Available for : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck83">
+											<label class="custom-control-label" for="customCheck83"> Boys </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck84">
+											<label class="custom-control-label" for="customCheck84"> Girls </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck85">
+											<label class="custom-control-label" for="customCheck85"> Boys / Girls </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Separate Hostel for Boys & Girls : </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck86">
+											<label class="custom-control-label" for="customCheck86"> Yes</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck87">
+											<label class="custom-control-label" for="customCheck87"> No</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck88">
+											<label class="custom-control-label" for="customCheck88"> Boys/AC Hostel</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck89">
+											<label class="custom-control-label" for="customCheck89"> Non-AC</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Hostel : </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>In Campus :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Out Campus :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Total No of Hostel: :</strong> </label>
+										<input type="number" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Boarding facility Available : </strong></label>
+								</div>
+								<div class="form-group col-md-6">
+                                    <label for="inputState"><strong>From Grade</strong></label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>A</option>
+                                        <option selected>B</option>
+                                        <option selected>C</option>
+                                        <option selected>D</option>
+                                    </select>
+                                </div>
+								<div class="form-group col-md-6">
+                                    <label for="inputState"><strong>Grade</strong></label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>A</option>
+                                        <option selected>B</option>
+                                        <option selected>C</option>
+                                        <option selected>D</option>
+                                    </select>
+                                </div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact"><strong>Upload Picture for :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+							</div>
+							<br>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+
+
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+    <!-- Required Js -->
+    <script src="{% static 'dashboard/js/vendor-all.min.js' %}"></script>
+    <script src="{% static 'dashboard/js/plugins/bootstrap.min.js' %}"></script>
+    <script src="{% static 'dashboard/js/pcoded.min.js' %}"></script>
+</body>
+</html>

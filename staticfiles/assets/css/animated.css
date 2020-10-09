@@ -1,0 +1,18 @@
+.main-btn1:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.main-btn1 {
+    border: 2px solid #fff;
+    height: 35px;
+    line-height: 31px;
+    background-color:#ffc107;
+    padding: 0 25px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 25px;
+	border-radius:20px;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}

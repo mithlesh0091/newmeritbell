@@ -1,0 +1,1905 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <title> MeritBell Consultancy || Home</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="" />
+    <!-- Favicon icon -->
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- vendor css -->
+     <link rel="stylesheet" href="{% static 'assets/css/consltancy.css' %}">
+     <link rel="stylesheet" href="{% static 'assets/css/upload.css' %}">
+	<style>
+	.icon-bell:before {
+    content: "\e836";
+}
+		html {
+		  scroll-behavior: smooth;
+		}
+		#more {display: none;}
+	</style>
+</head>
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar menupos-fixed menu-light ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-align-justify" aria-hidden="true"></i></span><span class="pcoded-mtext">Edit consultancy Profile</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#basic_information" >Basic Information</a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="#contact_information" class="nav-link "><span class="pcoded-micon"><i class="fa fa-phone" aria-hidden="true"></i></span><span class="pcoded-mtext"> Contact Details</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="#address_details" class="nav-link "><span class="pcoded-micon"><i class="fa fa-map-marker" aria-hidden="true"></i></span><span class="pcoded-mtext"> Address Details</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="#company_information" class="nav-link "><span class="pcoded-micon"><i class="fa fa-id-card" aria-hidden="true"></i></span><span class="pcoded-mtext"> Company Information</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="#images_gallery" class="nav-link "><span class="pcoded-micon"><i class="fa fa-window-restore" aria-hidden="true"></i></span><span class="pcoded-mtext"> Images / Gallery</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="#facilities" class="nav-link "><span class="pcoded-micon"><i class="fa fa-th-large" aria-hidden="true"></i></span><span class="pcoded-mtext"> Facilities</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="#certification" class="nav-link "><span class="pcoded-micon"><i class="fa fa-trophy" aria-hidden="true"></i></span><span class="pcoded-mtext">Certification & Awards</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-credit-card" aria-hidden="true"></i></span><span class="pcoded-mtext">Banking / Payment Details</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-align-justify"></i></span><span class="pcoded-mtext">Identification</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-th" aria-hidden="true"></i></span><span class="pcoded-mtext">Branches </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#" > </a></li>
+					        <li><a href="#" > </a></li>
+					        <li><a href="#" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-star" aria-hidden="true"></i></span><span class="pcoded-mtext">Reviews & Ratings </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#" > </a></li>
+					        <li><a href="#" > </a></li>
+					        <li><a href="#" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Subscription / Plans</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-question" aria-hidden="true"></i></span><span class="pcoded-mtext">Faqs</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="#" > </a></li>
+					        <li><a href="#" > </a></li>
+					        <li><a href="#" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span><span class="pcoded-mtext">Leads</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-window-maximize" aria-hidden="true"></i></span><span class="pcoded-mtext">NoticeBoard (News & Updates)</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-snowflake" aria-hidden="true"></i></span><span class="pcoded-mtext">Campaign Advertisment</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-briefcase" aria-hidden="true"></i></span><span class="pcoded-mtext">Careers / Jobs</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-bell" aria-hidden="true"></i></span><span class="pcoded-mtext">Notifications Advertisment</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-question-circle" aria-hidden="true"></i></span><span class="pcoded-mtext">Message / Enquiry Advertisment</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-unlock" aria-hidden="true"></i></span><span class="pcoded-mtext">Change Password / Mobile No.</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-info-circle" aria-hidden="true"></i></span><span class="pcoded-mtext">Help </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-calendar" aria-hidden="true"></i></span><span class="pcoded-mtext">Events / Education Fair </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-address-card" aria-hidden="true"></i></span><span class="pcoded-mtext">Refer Other Consultant</span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-credit-card" aria-hidden="true"></i></span><span class="pcoded-mtext">Payment </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-clone" aria-hidden="true"></i></span><span class="pcoded-mtext">Blog  </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-university" aria-hidden="true"></i></span><span class="pcoded-mtext">Admission  </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item pcoded-hasmenu">
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-mail"></i></span><span class="pcoded-mtext">Send Feedback   </span></a>
+					    <ul class="pcoded-submenu">
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					        <li><a href="" > </a></li>
+					    </ul>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-sidebar"></i></span><span class="pcoded-mtext">Terms & Conditions </span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="pcoded-mtext">Chat History</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption"></li>
+					<li class="nav-item">
+					    <a href="" class="nav-link "><span class="pcoded-micon"><i class="feather icon-log-in"></i></span><span class="pcoded-mtext">Logout</span></a>
+					</li>
+				</ul>
+				<div class="card text-center">
+					<div class="card-block">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<i class="feather icon-sunset f-40"></i>
+						<h6 class="mt-3">Help?</h6>
+						<p>Please contact us on our email for need any support</p>
+						<a href="#!" target="_blank" class="btn btn-primary btn-sm text-white m-0">Support</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed header-blue">
+		<div class="m-header">
+			<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+			<a href="#!" class="b-brand">
+				<!-- ========   change your logo hear   ============ -->
+				<img src="assets/images/logo.png" style="height: 50px;" alt="" class="logo">
+				<img src="assets/images/logo-icon.png" alt=""  style="height: 50px;"  class="logo-thumb">
+			</a>
+			<a href="#!" class="mob-toggler">
+				<i class="feather icon-more-vertical"></i>
+			</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+					<div class="search-bar">
+						<input type="text" class="form-control border-0 shadow-none" placeholder="Search here">
+						<button type="button" class="close" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="#!" ><strong>Toll Free : +91 987 654 4321</strong></a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#!" ><i class="fa fa-question" aria-hidden="true"></i><strong> FAQ's</strong></a>
+				</li>
+				<li class="nav-item">
+					<a href="#!" ><strong><i class="feather icon-mail"></i></strong></a>
+				</li>
+				<li>
+					<div class="dropdown">
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i><span class="badge bg-danger"><span class="sr-only"></span></span></a>
+						<div class="dropdown-menu dropdown-menu-right notification">
+							<div class="noti-head">
+								<h6 class="d-inline-block m-b-0">Notifications</h6>
+								<div class="float-right">
+									<a href="#!" class="m-r-10">mark as read</a>
+									<a href="#!">clear all</a>
+								</div>
+							</div>
+							<ul class="noti-body">
+								<li class="n-title">
+									<p class="m-b-0">NEW</p>
+								</li>
+								<li class="notification">
+									<div class="media">
+										<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+										<div class="media-body">
+											<p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>5 min</span></p>
+											<p>New ticket Added</p>
+										</div>
+									</div>
+								</li>
+								<li class="n-title">
+									<p class="m-b-0">EARLIER</p>
+								</li>
+								<li class="notification">
+									<div class="media">
+										<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+										<div class="media-body">
+											<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>10 min</span></p>
+											<p>Prchace New Theme and make payment</p>
+										</div>
+									</div>
+								</li>
+								<li class="notification">
+									<div class="media">
+										<img class="img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+										<div class="media-body">
+											<p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>12 min</span></p>
+											<p>currently login</p>
+										</div>
+									</div>
+								</li>
+								<li class="notification">
+									<div class="media">
+										<img class="img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+										<div class="media-body">
+											<p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+											<p>Prchace New Theme and make payment</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="noti-footer">
+								<a href="#!">show all</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="fa fa-eye" aria-hidden="true"></i>  <strong>Preview Page</strong></a>
+				</li>
+				<li>
+					<div class="dropdown drp-user">
+						<a href="#!" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="fa fa-user" aria-hidden="true"></i> <strong>Welcome ! {{user.first_name}}</strong> <i class="fa fa-caret-down" aria-hidden="true"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right profile-notification">
+							<div class="pro-head">
+								<img src="assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+								<span>John Doe</span>
+								<a href="auth-signin.html" class="dud-logout" title="Logout">
+									<i class="feather icon-log-out"></i>
+								</a>
+							</div>
+							<ul class="pro-body">
+								<li><a href="" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+								<li><a href="" class="dropdown-item"><i class="fa fa-cogs" aria-hidden="true"></i> Setting</a></li>
+								<li><a href="" class="dropdown-item"><i class="fa fa-info" aria-hidden="true"></i> Help</a></li>
+								<li><a href="" class="dropdown-item"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+								<li><a href="" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+								<li><a href="" class="dropdown-item"><i class="feather icon-log-out"></i> Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+<!-- [ Header ] end -->
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+					<div class="col-md-3 img-thumbnail  center-block">
+						<div class="form-group center-block">
+						  <div class="main-img-preview center-block">
+							<img class=" img-preview center-block align-items-center"  src="{% static 'assets/images/no-avatar.png' %}" style="height: 70px;"  title="Preview Logo">
+						  </div>
+						  <br>
+						  <div class="input-group">
+							<input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="Choose File" disabled="disabled">
+							<div class="input-group-btn">
+							  <div class="fileUpload btn btn-danger fake-shadow">
+								<span><i class="glyphicon glyphicon-upload"></i> Upload Logo</span>
+								<input id="logo-id" name="logo" type="file" class="attachment_upload">
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-3">
+					    <h5 class="m-b-10">Conasultancy Name</h5>
+						<button type="submit" class="btn  btn-primary">Profile Disabled / Enabled</button>
+					</div>
+					<div class="col-md-6">
+						<div class="alert alert-danger alert-dismissible fade show" role="alert">
+							<strong>Notice :  </strong> To Get your company verified By MeritBell.com knidly fill your all the details.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+		<!-- [ Main Content ] start -->
+        <div class="row" id="school_profile">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+						<div class="alert alert-primary alert-dismissible fade show" role="alert">
+							<strong>Pending ! </strong>  Your account would take 2 business days for verification. it will get live post verification. However you can keep entering and saving your  data and can also preview the page using the preview option available at the top of the right corner of the page to find out how would it appear after going live.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="alert alert-danger alert-dismissible fade show" role="alert">
+							<strong><img src="{% static 'assets/images/warning.png' %}"></strong> Attention you have a free package.  Kindly <a href="">Upgrade</a> your package to get more leads and services.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="alert alert-danger alert-dismissible fade show" role="alert">
+							<strong><img src="{% static 'assets/images/warning.png' %}"></strong> Your Consulting Profile is not visible to students and visitors if any of the following are incompleted :-
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="progress mb-4" style="height: 20px;">
+							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25% Profile completed.</div>
+						</div>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row" id="basic_information">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Basic Information</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="contact">Consultancy Name *</label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="contact">Consultancy Short Name *</label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="contact">USP ( Tag Line ) </label>
+										<input type="text" class="form-control" id="email" placeholder="" name="email" required>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="contact">Establishment Year</label>
+										<input type="date" class="form-control" id="email" placeholder="Date *" name="date" required>
+									</div>
+								</div>
+								<div class="col-sm-12">
+								<p><strong>Type Of Business</strong></p>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type_business_1" >
+											<label class="custom-control-label" for="type_business_1"> Trust  </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type_business_2">
+											<label class="custom-control-label" for="type_business_2"> Society</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type_business_3">
+											<label class="custom-control-label" for="type_business_3"> NGO </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type_business_4">
+											<label class="custom-control-label" for="type_business_4"> Individual / Private </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="type_business_5">
+											<label class="custom-control-label" for="type_business_5"> Others </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">Trust / Society / NGO Name</label>
+										<input type="text" class="form-control" id="" placeholder="" name="">
+									</div>
+								</div>
+								<div class="col-sm-12">
+								<p><strong>Serving / Dealing </strong></p>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Serving_1">
+											<label class="custom-control-label" for="Serving_1">  Overseas / Abroad   </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Serving_2">
+											<label class="custom-control-label" for="Serving_2"> India</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Serving_3">
+											<label class="custom-control-label" for="Serving_3"> Both </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+								<p><strong>Overseas </strong></p>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_1">
+											<label class="custom-control-label" for="overseas_1">  UK   </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_2">
+											<label class="custom-control-label" for="overseas_2"> USA</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_3">
+											<label class="custom-control-label" for="overseas_3"> Canada </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_4">
+											<label class="custom-control-label" for="overseas_4"> Russia</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_5">
+											<label class="custom-control-label" for="overseas_5"> China </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_6">
+											<label class="custom-control-label" for="overseas_6"> France</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_7">
+											<label class="custom-control-label" for="overseas_7"> Germany </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="overseas_8">
+											<label class="custom-control-label" for="overseas_8"> Other  </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">Specify Name</label>
+										<input type="text" class="form-control" id="email" placeholder="" name="email">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<p><strong>India  </strong></p>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="india_1">
+											<label class="custom-control-label" for="india_1">  PAN India / All Sates   </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="india_2">
+											<label class="custom-control-label" for="india_2"> WB</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="india_3">
+											<label class="custom-control-label" for="india_3"> Karnataka </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="india_4">
+											<label class="custom-control-label" for="india_4"> UP</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="india_5">
+											<label class="custom-control-label" for="india_5"> Delhi </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="india_6">
+											<label class="custom-control-label" for="india_6"> Other  </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">State Name</label>
+										<input type="text" class="form-control" id="email" placeholder="" name="email">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact">Upload Logo(Size limit:5MB)</label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-6">
+									<label for="contact">Upload cover Image:(Size limit:5MB)</label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">State Name</label>
+										<input type="text" class="form-control" id="" placeholder="" name="">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<p><strong>Social Media Links  </strong></p>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="" placeholder="Facebook Url" name="">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="" placeholder="Youtube Url" name="">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="" placeholder="Twitter Url" name="">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="" placeholder="Linkedin Url" name="">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="" placeholder="Instagram " name="">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<input type="text" class="form-control" id="" placeholder="Facebook Url" name="">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<p><strong>Service Offered </strong></p>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="service_1">
+											<label class="custom-control-label" for="service_1">  Schools  </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="service_2">
+											<label class="custom-control-label" for="service_2"> Colleges / Universities</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="service_3">
+											<label class="custom-control-label" for="service_3"> Open Board </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="service_4">
+											<label class="custom-control-label" for="service_4"> Coachings</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="service_5">
+											<label class="custom-control-label" for="service_5"> All  </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="service_6">
+											<label class="custom-control-label" for="service_6"> Other  </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">Specify Name</label>
+										<input type="text" class="form-control" id="" placeholder="" name="">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Categories Offered (Courses)  :</strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="courses_1">
+											<label class="custom-control-label" for="courses_1"> All Courses </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Engineering">
+											<label class="custom-control-label" for="Engineering"> Engineering</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Management">
+											<label class="custom-control-label" for="Management"> Management</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Business">
+											<label class="custom-control-label" for="Business"> Business</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Humanities">
+											<label class="custom-control-label" for="Humanities"> Arts / Humanities</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Science ">
+											<label class="custom-control-label" for="Science "> Science </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Commerce">
+											<label class="custom-control-label" for="Commerce"> Commerce</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Medical">
+											<label class="custom-control-label" for="Medical"> Medical</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="class9">
+											<label class="custom-control-label" for="class9"> Civil Engineering</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Agriculture">
+											<label class="custom-control-label" for="Agriculture"> Agriculture</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="BHMS">
+											<label class="custom-control-label" for="BHMS"> Homeopathy (BHMS)</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="BAMS">
+											<label class="custom-control-label" for="BAMS"> Ayurvedic (BAMS)</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="BNYS">
+											<label class="custom-control-label" for="BNYS"> BNYS - Naturopathy</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Nursing">
+											<label class="custom-control-label" for="Nursing"> Nursing</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Pharamacy">
+											<label class="custom-control-label" for="Pharamacy"> Pharamacy</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Teaching">
+											<label class="custom-control-label" for="Teaching"> Teaching</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Paramedical">
+											<label class="custom-control-label" for="Paramedical"> Paramedical</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Hotel_Management">
+											<label class="custom-control-label" for="Hotel_Management"> Hotel Management</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="class19">
+											<label class="custom-control-label" for="class19"> Mechatronics Engineering</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Veterinary">
+											<label class="custom-control-label" for="Veterinary"> Veterinary</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Other ">
+											<label class="custom-control-label" for="Other "> Other </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">Specify Name</label>
+										<input type="text" class="form-control" id="" placeholder="" name="">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>Online Counselling Faciility Available </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="Faciility_1">
+										<label class="custom-control-label" for="Faciility_1"> Yes</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="Faciility_2">
+										<label class="custom-control-label" for="Faciility_2"> No</label>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>Franchhise Available</strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="Faciility_3">
+										<label class="custom-control-label" for="Faciility_3"> Yes</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="Faciility_4">
+										<label class="custom-control-label" for="Faciility_4"> No</label>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>I Want details / Information only through </strong></label>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="SMS">
+											<label class="custom-control-label" for="SMS"> SMS</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Call">
+											<label class="custom-control-label" for="Call"> Call</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Email">
+											<label class="custom-control-label" for="Email"> Email</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Watsapp">
+											<label class="custom-control-label" for="Watsapp"> Watsapp</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="All">
+											<label class="custom-control-label" for="All"> All</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>Recieve details on Watsapp </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="Recieve_1">
+										<label class="custom-control-label" for="Recieve_1"> Yes</label>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="custom-control custom-switch">
+										<input type="checkbox" class="custom-control-input" id="Recieve_2">
+										<label class="custom-control-label" for="Recieve_2"> No</label>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for="Region"><strong>I want to recieve calls between </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Anytime">
+											<label class="custom-control-label" for="Anytime"> Anytime</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Daytime">
+											<label class="custom-control-label" for="Daytime"> Daytime</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Hours">
+											<label class="custom-control-label" for="Hours"> Working Hours (9am - 6pm)</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Holiday">
+											<label class="custom-control-label" for="Holiday"> Working Hours (9am - 6pm) Except Holiday</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="aam">
+											<label class="custom-control-label" for="aam"> 9am - 3 pm</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Others">
+											<label class="custom-control-label" for="Others"> Others</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="contact">Specify Time</label>
+										<input type="text" class="form-control" id="" placeholder="" name="">
+									</div>
+								</div>
+							</div>
+							<br>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		 <div class="row" id="contact_information">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Contact Details</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-12">
+									<label for=""><strong>Contact Person Details : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Mobile No" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="email" class="form-control" id="contact" placeholder="Email" name="email">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Designation" name="Designation">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Principal : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Mobile No" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="email" class="form-control" id="contact" placeholder="Email" name="email">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="contact" disabled="" name="Designation">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Chairman-Director : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Mobile No" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="email" class="form-control" id="contact" placeholder="Email" name="email">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" disabled="" placeholder="Designation" name="Designation">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Offical : </strong></label>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Name : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Email : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Fax : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="13235551234@efaxsend.com" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1"><strong>About College / View / College / Descriptiopn : </strong></label>
+										<textarea placeholder="Address" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-info">Submit</button>
+						</form>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		<!-- [ Main Content ] end -->
+		<div class="row" id="address_details">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Address Details</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-12">
+									<label for="Region"><strong>Select Region  :  </strong></label>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline11" name="customRadioInline1" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline11">INDIA</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="customRadioInline2" name="customRadioInline12" class="custom-control-input">
+										<label class="custom-control-label" for="customRadioInline2">ABOARD</label>
+									</div>
+								</div>
+								<br>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Country : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>State : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>District/City: : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for=""><strong>Town/Main Area: : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Sub Area : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Landmark : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Pin Code : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for=""><strong>Get My Location : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1"><strong>Address : </strong></label>
+										<textarea placeholder="Address" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<h5>How to reach ?:- </h5>
+									<hr>
+									<label for=""><strong>Distance from Airport : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Distance / kms" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="time" class="form-control" id="contact" placeholder="Time" name="Time">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Latitude" name="latitude">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Distance from Railway Station 1: </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Distance ( kms )" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="time" class="form-control" id="contact" placeholder="Time" name="Time">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Distance from Railway Station 2: </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Distance ( kms )" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="time" class="form-control" id="contact" placeholder="Time" name="Time">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<label for=""><strong>Distance from Bus Station : </strong></label>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Name" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="text" class="form-control" id="contact" placeholder="Distance ( kms )" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<input type="time" class="form-control" id="contact" placeholder="Time" name="Time">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>Bus Number : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>From : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="Railway Station" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>To : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="School" name="contact">
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-info">Submit</button>
+						</form>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		<div class="row" id="company_information">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Company Information</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">Company Name *</label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">Company Short Name *</label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">USP ( Tag Line ) </label>
+										<input type="text" class="form-control" id="email" placeholder="" name="email">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact">Establishment Year</label>
+										<input type="date" class="form-control" id="email" placeholder="Date *" name="date">
+									</div>
+								</div>
+							<br>
+							<button type="submit" class="btn  btn-info">Submit</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+		<!-- [ Main Content ] start -->
+        <div class="row" id="images_gallery">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Images / Gallery</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-4">
+									<label for="contact"><strong>Consultancy Images</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Consultancy Video</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Consultancy 360 째</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Saftey & Security</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Parking upload</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+							</div>
+							<br>
+							<button type="submit" class="btn  btn-primary">Update</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+		 <div class="row" id="facilities">
+            <!-- [ form-element ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Facilities</h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck1">
+											<label class="custom-control-label" for="customCheck1"> Activity center</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck2">
+											<label class="custom-control-label" for="customCheck2"> Computer Labs </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck3">
+											<label class="custom-control-label" for="customCheck3"> Library</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck4">
+											<label class="custom-control-label" for="customCheck4"> Laboratories </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck5">
+											<label class="custom-control-label" for="customCheck5"> Canteen</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck6">
+											<label class="custom-control-label" for="customCheck6"> Transport </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck7">
+											<label class="custom-control-label" for="customCheck7"> Medical</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck8">
+											<label class="custom-control-label" for="customCheck8"> Lockers </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck9">
+											<label class="custom-control-label" for="customCheck9"> CCTV </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck10">
+											<label class="custom-control-label" for="customCheck10"> Audotorium</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck11">
+											<label class="custom-control-label" for="customCheck11"> Seminar Hall </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck12">
+											<label class="custom-control-label" for="customCheck12"> Gymnasiumn</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck13">
+											<label class="custom-control-label" for="customCheck13"> Play Ground </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck14">
+											<label class="custom-control-label" for="customCheck14"> Drinking Water</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck15">
+											<label class="custom-control-label" for="customCheck15"> Sports Facilities </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck16">
+											<label class="custom-control-label" for="customCheck16"> Music & Dance </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck17">
+											<label class="custom-control-label" for="customCheck17"> Stationary Shop</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck18">
+											<label class="custom-control-label" for="customCheck18"> WI-FI </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck19">
+											<label class="custom-control-label" for="customCheck19"> Parking Area</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck20">
+											<label class="custom-control-label" for="customCheck20"> Security </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck21">
+											<label class="custom-control-label" for="customCheck21"> Guard </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck22">
+											<label class="custom-control-label" for="customCheck22"> Fire Extinguihev</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck23">
+											<label class="custom-control-label" for="customCheck23"> Hygienic </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck12">
+											<label class="custom-control-label" for="customCheck12"> Washroom</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck24">
+											<label class="custom-control-label" for="customCheck24"> Hostel </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck25">
+											<label class="custom-control-label" for="customCheck25"> Swimming Pool</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck26">
+											<label class="custom-control-label" for="customCheck26"> Splash Pool </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="form-group">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="customCheck27">
+											<label class="custom-control-label" for="customCheck27"> Other </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-primary">Update</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+                <!-- Input group -->
+            </div>
+            <!-- [ form-element ] end -->
+        </div>
+		<!-- [ Main Content ] start -->
+		<div class="row" id="certification">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>certification & Awards </h5>
+                        <hr>
+						<form action="" method="POST">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong>National Ranking : </strong></label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Ranking Wise :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Upload File :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> State Ranking :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for=""><strong> Ranking Wise :</strong> </label>
+										<input type="text" class="form-control" id="contact" placeholder="" name="contact">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<label for="contact"><strong>Upload File :</strong></label>
+									<div class="form-group custom-file">
+									   <input type="file" class="custom-file-input" id="customFile">
+									   <label class="custom-file-label" for="customFile">Choose file</label>
+								   </div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<textarea placeholder="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn  btn-info">Save</button>
+						</form>
+						<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</section>
+<script>
+$(document).ready(function() {
+    var brand = document.getElementById('logo-id');
+    brand.className = 'attachment_upload';
+    brand.onchange = function() {
+        document.getElementById('fakeUploadLogo').value = this.value.substring(12);
+    };
+
+    // Source: http://stackoverflow.com/a/4459419/6396981
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('.img-preview').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#logo-id").change(function() {
+        readURL(this);
+    });
+});
+
+
+
+</script>
+<!-- [ Main Content ] end -->
+    <!-- Required Js -->
+    <script src="{% static 'dashboard/js/vendor-all.min.js' %}"></script>
+    <script src="{% static 'dashboard/js/plugins/bootstrap.min.js' %}"></script>
+    <script src="{% static 'dashboard/js/pcoded.min.js' %}"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.js" integrity="sha512-oFCsbxZP/K+0EjvkyIHBvC3ft8LZnO+8kljz0RiJN8ffUCeX0LF1G0WlvU3jMJVaoKBrC+I2ohi4BCpKq2ZgXw==" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>

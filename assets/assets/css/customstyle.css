@@ -1,0 +1,288 @@
+.text{
+	font-size:14px !important;
+	text-align:center !important;
+}
+.text1{
+	font-size:12px !important;
+	text-align:center !important;
+}
+
+#what-we-do{
+	background:#ffffff;
+}
+#what-we-do .card{
+	padding: 29px!important;
+	border: none;
+	border-radius: 100px;
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+/*#what-we-do .card:hover{
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+}*/
+#what-we-do .card:hover {
+    -webkit-box-shadow: 5px 7px 9px -4px #007bff;
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 2px 4px 10px 0 #007bff57, 2px 4px 10px 0 #007bff5c;
+}
+#what-we-do .card .card-block{
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color: #007b5e !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+
+#what-we-do .card:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*2nd design*/
+
+#what-we-do .card2{
+	background-color: #fff;
+	padding: 34px!important;
+	border: none;
+	background-color: #fff
+	margin-bottom:1rem;
+	
+}
+/*#what-we-do .card:hover{
+	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+}*/
+#what-we-do .card:hover {
+    -webkit-box-shadow: 5px 7px 9px -4px #007bff;
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 2px 4px 10px 0 #007bff57, 2px 4px 10px 0 #007bff5c;
+}
+#what-we-do .card .card-block{
+    position: relative;
+}
+#what-we-do .card .card-block a{
+	color: #007b5e !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+
+#what-we-do .card:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*end 2nd design*/
+/*2nd design*/
+#what-we-do{
+	background:#ffffff;
+}
+#what-we-do .card3{
+	padding: 1rem!important;
+	border: none;
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#what-we-do .card3:hover {
+    -webkit-box-shadow: 5px 7px 9px -4px #48cfaf;
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 2px 4px 10px 0 #48cfaf91, 2px 4px 10px 0 #48cfaf;
+}
+#what-we-do .card3 .card-block{
+    position: relative;
+}
+#what-we-do .card3 .card-block a{
+	color: #007b5e !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card3 .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card3:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card3 .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+
+#what-we-do .card3:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*end 3nd design*/
+/*4snd design*/
+#what-we-do{
+	background:#ffffff;
+}
+#what-we-do .card4{
+	padding: 1rem!important;
+	border: none;
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#what-we-do .card4:hover {
+    -webkit-box-shadow: 5px 7px 9px -4px #fcc741;
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 2px 4px 10px 0 #ffc107d6, 2px 4px 10px 0 #ffc107;
+}
+#what-we-do .card4 .card-block{
+    position: relative;
+}
+#what-we-do .card4 .card-block a{
+	color: #007b5e !important;
+	font-weight:700;
+	text-decoration:none;
+}
+#what-we-do .card4 .card-block a i{
+	display:none;
+	
+}
+#what-we-do .card4:hover .card-block a i{
+	display:inline-block;
+	font-weight:700;
+	
+}
+#what-we-do .card4 .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+
+#what-we-do .card4:hover .card-block:before{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*end 4nd design*/
+/*3nd design*/
+/*.card {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 34, 51, 0.1);
+    box-shadow: 2px 4px 10px 0 rgba(0, 34, 51, 0.05), 2px 4px 10px 0 rgba(0, 34, 51, 0.05);
+    border-radius: 0.15rem;
+}*/
+
+/* Tabs Card 
+
+.tab-card {
+  border:1px solid #eee;
+*/
+
+.tab-card-header {
+  background:none;
+}
+/* Default mode */
+.tab-card-header > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tab-card-header > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tab-card-header > .nav-tabs > li > a {
+  border: 0;
+  border-bottom:2px solid #f8f9fa4d;
+  margin-right: 0;
+  color:#f8f9fa;
+  padding: 2px 15px;
+}
+
+.tab-card-header > .nav-tabs > li > a.show {
+    border-bottom:2px solid #007bff;
+    color: #007bff;
+}
+.tab-card-header > .nav-tabs > li > a:hover {
+    color: #007bff;
+}
+
+.tab-card-header > .tab-content {
+  padding-bottom: 0;
+}

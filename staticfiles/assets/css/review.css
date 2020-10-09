@@ -1,0 +1,32 @@
+.review{
+ color:#ffc107 !important;
+}
+.about_content1  {
+    margin-top: 10px !important;
+}
+.text_top{
+	margin-top: 24px !important;
+}
+.search_top{
+	margin-top: 7px !important;
+}
+.search-slt{
+    display: block;
+    width: 100%;
+    font-size: 0.875rem;
+    line-height:2.5;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    height: calc(3rem + 2px) !important;
+    border-radius:0;
+}
+.wrn-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+     height: calc(3rem + 2px) !important;
+     border-radius:0;
+}

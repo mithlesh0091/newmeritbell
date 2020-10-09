@@ -1,0 +1,220 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>MeritBell</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/customize1.css' %}">
+    <!--====== Animate css ======-->
+   	 <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!--====== Fontawesome css ======-->
+ 	<link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <!--====== Slick css ======-->
+  	<link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <!--====== Style css ======-->
+     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+   	<link rel="stylesheet" href="{% static 'assets/css/customstyle.css' %}">
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-------TABS-------------->
+
+    <!---------END ENDS------------------------------>
+<style>
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+}
+
+
+button.w3-bar-item.w3-button.btn.btn-primary {
+    background: #117a8b;
+}
+</style>
+</head>
+<body>
+{% include "header.html" %}
+<div class="jumbotron text-center">
+
+</div>
+
+<div class="container border border-primary" >
+ <div style="margin: 10px 10px 30px 10px;">
+<div>
+<p style="padding-left: 14PX;TEXT-ALIGN:justify;">
+Get your college listed/Updated on World's largest/fasted growing education Portal MeritBell.com
+Increase and Diversity your admission without Resources and loosing focus on teaching & learning.
+</p>
+</div>
+
+<div class="container">
+
+ <div class="border border-primary">
+ <div style="text-align: center;">
+ <button class="button button3" style="border-radius: 50px; background: #117a8b;">Get Acecess &amp; Masage your college's Profile on MeritBell.com</button></div>
+ <!--  <button type="button" class="btn btn-primary btn-block" style="border-radius: 1.50rem;width: 552px;margin: 0 auto;">Get Acecess &amp; Masage your college's Profile on MeritBell.com</button>-->
+
+
+  <p class="text-center" style="padding: 10px;">Start your college account with MeritBell.com and get analytics &amp; lead information easily</p>
+
+  <div class="row">
+      <div class="col-sm-4">
+      <h3 class="text-center"><i class="fa fa-university border border-primary rounded" aria-hidden="true"; style="font-size:60px;color:#117a8b;padding: 10px;"></i></h3>
+
+      <p class="text-center ">Your college is not listed <br>on MeritBell.com <br>Add/list your collegechool</p>
+          <div class="text-center "><button   onclick="window.location.href='{% url 'employee_register' %}'" class="button button1">Add/list your college</a></button></div>
+    </div>
+      <div class="col-sm-4">
+              <h3 class="text-center"><i class="fa fa-graduation-cap border border-primary rounded" aria-hidden="true" ; style="font-size:60px;color:#117a8b;padding: 10px;"></i></h3>
+
+      <p class="text-center ">Is your college already<br> listed om MeritBell.com ? <br>Great!claim ownership of your college page</p>
+    <div class="text-center "><button  onclick="window.location.href='{% url 'employee_register' %}'" class="button button1">Claim your college</button></div>
+      </div>
+
+      <div class="col-sm-4">
+<h3 class="text-center "><i class="fa fa-user border border-primary rounded" aria-hidden="true"; style="font-size:60px;color:#117a8b;padding: 10px;"></i></h3>
+      <p class="text-center ">Already Register ? <br>Update your profile<br> Sign in here....</p>
+          <div class="text-center "><button onclick="window.location.href='{% url 'login' %}'" class="button button1">Login here</button></div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+
+</div>
+
+    <div class="container">
+    <div class="border border-primary" style="margin: 20px 0px 0px 0px;">
+     <div class="row">
+      <div class="col-sm-12">
+
+  <!--<div style="text-align: center;">
+   <div class="btn-group btn-group-justified">
+  <a href="#" class="btn btn-primary">Register Steps </a>
+  <a data-toggle="tab" href="#menu1" class="btn btn-primary">Why Join MeritBell.com</a>
+</div>--->
+
+
+      <!-----------------------tabs----------------->
+<div style="text-align: center;padding: 10px;">
+<div class="w3-bar w3-black btn-group">
+<button class="w3-bar-item w3-button " onclick="openCity('Register')" style="
+    border-radius: 50px;
+    background: #117a8b;
+    color: #fff;
+">Register Steps</button>
+<button class="w3-bar-item w3-button border-left-0" onclick="openCity('Joinm')" style="
+    background: #117a8b;
+    color: #fff;
+    /* border-radius: 0px 43px 59px 25px; */
+    border-radius: 50px;
+">Why Join MeritBell.com</button>
+</div>
+      </div>
+
+
+
+<div id="Register" class="w3-container city">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <p style="
+    padding: 10px 0px 0px 0px;
+    color: #117a8b;
+">Registration Stesps:-</p>
+        <div>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/GV9yHrQ293U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="
+    width: 500px;
+    height: 300px;
+"></iframe>
+             <p style="color: color: #117a8b;color: #117a8b;font-size: 18px;">&gt;&gt;A.if yours college is not listed on MeritBell.com.</p>
+ <p>Step 1. Click on the list college to add/list your college.</p>
+<p>step 2. Create your Account and get Registered.</p>
+<p>step 3. Select Plan,(if want more managment Select better plan or you can choose free also)
+<p>step 4. Complete your profile.</p>
+        <p style="color: color: #117a8b;color: #117a8b;font-size: 18px;">    >>B.if yours college is listed on MeritBell.com.</p>
+ <p>Step 1. Click on your college</p>
+ <p>step 2. Fill the form to get Ownership</p>
+ <p>step 3. Select plan</p>
+ <p>step 4. Complete your profile.</p>
+
+  <p style="color: color: #117a8b;color: #117a8b;font-size: 18px;">      >>C.if you are already Registered on our portl.</p>
+<p>Step 1. Click on the login Here.</p>
+<p>Step 2. Selected plan to upgrade your account.</p>
+<p>Step 3. Complete your profile.</p>
+        </div>
+    </div>
+    <div class="col-sm-6">
+      <p style=" padding: 40px 0px 0px 0px;">MeritBell.com is a digital platform to fixed information
+about colleges-Admission information like procedure,sales
+eligibility and applications froms,fees.Reviews,Rankings
+Results facilities,Distance/locations,Campus picture &amp; Videos</p>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div id="Joinm" class="w3-container city" style="display:none">
+        <p style="padding: 10px 0px 0px 0px;color: #117a8b;">Why Join on MeritBell.com ?</p>
+<p style="color: color: #117a8b;color: #117a8b;font-size: 14px;">>> Why Should I add/list/claim on MeritBell.com ?</p>
+</div>
+
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+}
+</script>
+
+      <!-----------------------END tabs----------------->
+
+
+
+      </div> </div></div></div></div>
+
+
+     </div>
+     <div><p style="
+    margin: 40px;
+"></p></div>
+ {% include "footer.html" %}
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+.copt_text{
+	width: 200px !important;
+	margin-top:-2px !important;
+}
+.des_text{
+	text-align:left!important;
+}
+.modal_title{
+	color:#ffc107 !important;
+}
+.section-title {
+	position: relative !important;
+}
+.section-title p {
+	font-size: 16px ;
+	margin-bottom: 5px;
+	font-weight: 400;
+}
+.section-title h4 {
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: capitalize;
+	position: relative;
+	padding-bottom: 20px;
+	display: inline-block
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 2px;
+	background-color: #d8d8d8;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+.section-title h4:after {
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #FF7200;
+	left: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+.pt-100 {
+	padding-top: 100px;
+}
+.pb-100 {
+	padding-bottom: 100px;
+}
+.mb-100{
+    margin-bottom:100px;
+}
+.services {
+	background-color: #FBFBFB;
+}
+.single-service {
+	position: relative;
+	text-align: center;
+	margin-bottom: 50px;
+	-webkit-transition: .3s;
+	transition: .3s;
+	padding: 30px 20px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16)
+}
+.single-service:before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	background-color: #ffc107;
+	left: 0;
+	top: 0;
+	content: "";
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	background-color: #ffc107;
+	right: 0;
+	bottom: 0;
+	content: "";
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:hover:after,
+.single-service:hover:before {
+	width: 50%;
+	height: 2px;
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:hover {
+	box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.10)
+}
+.single-service i.fa {
+	font-size: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #ddd;
+	line-height: 60px;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	-webkit-transition: .3s;
+	transition: .3s
+}
+.single-service:hover i.fa {
+	background-color: #FF7200;
+	color: #fff;
+	border-color: #FF7200;
+	border-radius: 0;
+}
+.single-service h4 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+.single-service p {
+	font-size: 15px;
+	line-height: 1.8;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+.bg-faded{background-color:#f3f3f3;max-height:500px}
+.btn-round{border-radius:500px}
+.btn-round,.btn-round:hover,.btn-round:active{border-color:transparent}
+.modal.animate {opacity:0}
+.modal.animate.show {opacity:1}
+.modal.animate .modal-dialog{-webkit-transform:translate(0,0);-ms-transform: translate(0,0);transform:translate(0,0)}
+.modal.animate .a-fadeLeftBig{-webkit-animation:fadeOutLeftBig .5s;animation:fadeOutLeftBig .5s}
+    .modal.animate.show .a-fadeLeftBig{-webkit-animation:fadeInLeftBig .5s;animation:fadeInLeftBig .5s}
+.modal.animate .a-fadeRightBig{-webkit-animation:fadeOutRightBig .5s;animation:fadeOutRightBig .5s}
+    .modal.animate.show .a-fadeRightBig{-webkit-animation:fadeInRightBig .5s;animation:fadeInRightBig .5s}
+.modal.animate .a-fadeUpBig{-webkit-animation:fadeOutUpBig .5s;animation:fadeOutUpBig .5s}
+    .modal.animate.show .a-fadeUpBig{-webkit-animation:fadeInUpBig .5s;animation:fadeInUpBig .5s}
+.modal.animate .a-fadeDownBig{-webkit-animation:fadeOutDownBig .5s;animation:fadeOutDownBig .5s}
+	.modal.animate.show .a-fadeDownBig{-webkit-animation:fadeInDownBig .5s;animation:fadeInDownBig .5s}
+.modal.animate .a-fadeRight{-webkit-animation:fadeOutRight .5s;animation:fadeOutRight .5s}
+	.modal.animate.show .a-fadeRight{-webkit-animation:fadeInRight .5s;animation:fadeInRight .5s}
+.modal.animate .a-fadeLeft{-webkit-animation:fadeOutLeft .5s;animation:fadeOutLeft .5s}
+	.modal.animate.show .a-fadeLeft{-webkit-animation:fadeInLeft .5s;animation:fadeInLeft .5s}
+.modal.animate .a-fadeUp{-webkit-animation:fadeOutUp .5s;animation:fadeOutUp .5s}
+	.modal.animate.show .a-fadeUp{-webkit-animation:fadeInUp .5s;animation:fadeInUp .5s}
+.modal.animate .a-fadeDown{-webkit-animation:fadeOutDown .5s;animation:fadeOutDown .5s}
+    .modal.animate.show .a-fadeDown{-webkit-animation:fadeInDown .5s;animation:fadeInDown .5s}
+.modal.animate .a-lightSpeed{-webkit-animation:lightSpeedOut .5s;animation:lightSpeedOut .5s}
+    .modal.animate.show .a-lightSpeed {-webkit-animation:lightSpeedIn .5s;animation: lightSpeedIn .5s}
+.modal.animate .a-flipX{-webkit-animation:flipOutX .5s;animation:flipOutX .5s}
+	.modal.animate.show .a-flipX{-webkit-animation:flipInX .5s;animation:flipInX .5s}
+.modal.animate .a-flipY{-webkit-animation:flipOutY .5s;animation:flipOutY .5s}
+	.modal.animate.show .a-flipY{-webkit-animation:flipInY .5s;animation:flipInY .5s}
+.modal.animate .a-roll{-webkit-animation:rollOut .5s;animation: rollOut .5s}
+	.modal.animate.show .a-roll{-webkit-animation:rollIn .5s;animation:rollIn .5s}
+.modal.animate .a-bounce{-webkit-animation:bounceOut .5s;animation:bounceOut .5s}
+	.modal.animate.show .a-bounce{-webkit-animation:bounceIn .5s;animation:bounceIn .5s}
+.modal.animate .a-rotate{-webkit-animation:rotateOut .5s;animation:rotateOut .5s}
+	.modal.animate.show .a-rotate{-webkit-animation:rotateIn .5s;animation:rotateIn .5s}
+.modal.animate .a-zoom{-webkit-animation:zoomOut .5s;animation:zoomOut .5s}
+	.modal.animate.show .a-zoom{-webkit-animation:zoomIn .5s;animation:zoomIn .5s}
+.modal.animate .a-zoomUp{-webkit-animation:zoomOutUp .5s;animation:zoomOutUp .5s}
+	.modal.animate.show .a-zoomUp{-webkit-animation: zoomInUp .5s;animation:zoomInUp .5s}
+.modal.animate .a-zoomRight {-webkit-animation: zoomOutRight .5s;animation:zoomOutRight .5s}
+	.modal.animate.show .a-zoomRight{-webkit-animation: zoomInRight .5s;animation:zoomInRight .5s}
+.modal.animate .a-zoomDown{-webkit-animation:zoomOutDown .5s;animation:zoomOutDown .5s}
+	.modal.animate.show .a-zoomDown{-webkit-animation:zoomInDown .5s;animation:zoomInDown .5s}
+.modal.animate .a-zoomLeft{-webkit-animation:zoomOutLeft .5s;animation:zoomOutLeft .5s}
+	.modal.animate.show .a-zoomLeft{-webkit-animation:zoomInLeft .5s;animation:zoomInLeft .5s}
+

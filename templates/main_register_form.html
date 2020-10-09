@@ -1,0 +1,142 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+	<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Meritbell || Popular Schools</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!--====== Animate css ======-->
+   	<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <!--====== Magnific Popup css ======-->
+   	 <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--====== Nice Select css ======-->
+  	<link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <!--====== Default css ======-->
+   	<link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <!--====== Style css ======-->
+	<link rel="stylesheet" href="{% static 'assets/css/testimonials.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+   	<link rel="stylesheet" href="{% static 'assets/css/hexa_grid.css' %}">
+  	<link rel="stylesheet" href="{% static 'assets/css/card_design.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+ 	<link rel="stylesheet" href="{% static 'assets/css/customstyle.css' %}">
+    <!--====== Responsive css ======-->
+	<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</head>
+<body style="overflow-x:hidden;">
+    <div style="background-image: url(&quot;http://w3iscool.com/wp-content/themes/pinbin/images/wood.png&quot;);">
+    <!--====== PRELOADER PART START ======-->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+{% include "header.html" %}
+<div class="jumbotron text-center" style="
+    padding:58px;
+">
+  <h1></h1>
+
+</div>
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div class="card">
+                <div class="card-header text-black">
+                  <h2 style="
+    TEXT-ALIGN: CENTER;
+    FONT-SIZE: 30PX;
+    color: #117a8b;
+">Registration</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                       <div class="col-lg-4">
+                        <a type="button" class="btn btn-block" href="{% url 'customer_register' %}" href="{% url 'employee_register' %}"><img src="{% static 'assets/images/mainschool.png' %}" style="
+    height: 200px;
+    width: 200px;
+">Register as School</a>
+                       </div>
+                       <div class="col-lg-4">
+                        <a type="button" class="btn btn-block" href="{% url 'employee_register' %}"><img src="{% static 'assets/images/collages.png' %}" style="
+    height: 200px;
+    width: 200px;
+" class="">Register as  Colleges</a>
+                       </div>
+                       <div class="col-lg-4">
+                        <a type="button" class="btn btn-block" href="{% url 'consultancy_register' %}" ><img src="{% static 'assets/images/coordination-icon-9.jpg' %}" style="
+    height: 200px;
+    width: 200px;
+">Register as Consultancy</a>
+                       </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--    <footer>-->
+<!--        <div class="container">-->
+<!--            <div class="row well ml-t">-->
+<!--                <div class="col-lg-8 col-md-8">-->
+<!--                    <h4>Developed by: <a href="https://carlofontanos.com" target="_blank">Carl Victor C. Fontanos</a></h4>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-4">-->
+<!--                    <p class="m-t">Copyright &copy <a href="https://carlofontanos.com" target="_blank">www.carlofontanos.com</a> 2017</p>-->
+<!--                    <p>All Rights Reserved.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </footer>-->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== jquery js ======-->
+    <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+	<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <!--====== Slick js ======-->
+     <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!--====== Counter Up js ======-->
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <!--====== Nice Select js ======-->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <!--====== Count Down js ======-->
+    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <!--====== Appear js ======-->
+     <script src="{% static 'assets/js/jquery.appear.min.js' %}"></script>
+    <!--====== Main js ======-->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  </div>
+  {% include "footer.html" %}
+</body>
+</html>

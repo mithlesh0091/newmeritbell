@@ -1,0 +1,46 @@
+.text_align{
+	text-align:justify !important;
+}
+.arrow_color{
+	color:#ffc107!important;
+}
+.school_filter{
+    margin-left: 20px !important;
+}
+.scroll {
+  height: 150px !important;
+  overflow-y: scroll !important;
+}
+/* --------- Global ----------*/
+.transition{
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.img-responsive{
+    width:100%;
+}
+
+/* --------- Simple Zoom Effects ----------*/
+.product-div1{
+    position:relative;
+    overflow:hidden;
+	margin-top:40px;
+}
+.product-div1:hover img{
+    transform: scale(1.1);
+}
+img{
+    transform: scale(1);
+}
+.years{
+	color:#ff0101  !important;
+}
+.time_color{
+	color:#05bd05  !important;
+}
+.courses_padding{
+    padding: 0 0px 0px !important;
+}

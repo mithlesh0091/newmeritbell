@@ -1,0 +1,188 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>MeritBell</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'assets/css/customize1.css' %}">
+    <!--====== Animate css ======-->
+   	 <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!--====== Fontawesome css ======-->
+ 	<link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <!--====== Slick css ======-->
+  	<link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <!--====== Style css ======-->
+     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+   	<link rel="stylesheet" href="{% static 'assets/css/customstyle.css' %}">
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!---------------------search-------------------------->
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!---------------------END search-------------------------->
+    <!-------TABS-------------->
+
+    <!---------END ENDS------------------------------>
+<style>
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+}
+
+
+button.w3-bar-item.w3-button.btn.btn-primary {
+    background: #117a8b;
+}
+</style>
+</head>
+<body>
+{% include "header.html" %}
+<div class="jumbotron text-center">
+    <h6>Register form</h6>
+</div>
+<div class="container border border-primary">
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm-12">
+      <p class="text-center" >Create your Account and Get Started with MeritBell.com for your School</p>
+    </div>
+
+      <div class="container">
+<form id="contact-form" method="post" action="{% url 'addyourschool' %}" role="form">
+    {% csrf_token %}
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                 <label for="form_name">School Name</label>
+                  <input type="text" name="schoolname" id="product" class="form-control" placeholder="Type few letter & select from down *" required="required" data-error="Lastname is required.">
+                <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_cfschp">Can't find your School *</label>
+                    <input id="form_cfschp" type="text" name="form_cfschpool" class="form-control" placeholder="Can't find your School *" required="required" data-error="Can't find your School">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+          <div class="form-group">
+                    <label for="Pessonname">Contact person Name *</label>
+                    <input id="Pessonname" type="text" name="Pessonname" class="form-control" placeholder="Contact person Name *" required="required" data-error="Contact person Name ">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="DesignationatSchool">Designation at School(job title at this section) *</label>
+                    <select id="DesignationatSchool" name="DesignationatSchool" class="form-control" required="required" data-error="Designation at School">
+                        <option value=""></option>
+                        <option value="Request principal">Principal</option>
+                        <option value="Request quotation">Founder</option>
+                        <option value="Request order status">Management</option>
+                        <option value="Request copy of an invoice">Teachers</option>
+                        <option value="Other">Others</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+            <div class="col-md-6">
+                 <div class="form-group">
+                    <label for="pwd">Password *</label>
+                    <input id="pwd" type="password" name="password" class="form-control" placeholder="Enter your Password *" required="required" data-error="password">
+                    <div class="help-block with-errors"></div>
+                </div>
+
+            </div>
+                 <div class="col-md-6">
+                 <div class="form-group">
+                    <label for="pwd">Confirm Password *</label>
+                    <input id="pwd" type="password" name="password" class="form-control" placeholder="Confirm Password *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+
+            </div>
+            </div>
+           <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input id="email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+
+            </div>
+                   <div class="col-md-6">
+                <div class="form-group">
+                    <label for="tel">Mobile No. *</label>
+                    <input id="tel" type="tel" name="phone" class="form-control" placeholder="Please enter your Mobile No *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+
+            </div>
+            </div>
+            <div class="col-md-12">
+               <div class="text-center">  <input type="submit" class="btn btn-success btn-send" value="Register"></div>
+                <div class="text-center">Aready Register / have an account ? <a href="{% url 'login' %}">Login here</a></div>
+            </div>
+        </div>
+
+
+</form>
+
+  </div>
+</div>
+
+</div>
+
+</div>
+<script>
+    $(function () {
+        $("#product").autocomplete({
+            source: '{% url 'addyourschool' %}',
+
+        });
+    });
+</script>
+<!-----------search----------------------------------------------------->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-----------search----------------------------------------------------->
+</body>
+</html>

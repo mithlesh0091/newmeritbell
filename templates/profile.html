@@ -1,0 +1,303 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+	<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Meritbell || College Register</title>
+    <!--====== Favicon Icon ======-->
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+    <!--====== Magnific Popup css ======-->
+     <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <!--====== Default css ======-->
+   <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/card_design.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+ 	<link rel="stylesheet" href="{% static 'assets/css/customstyle.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/schools.css' %}">
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+
+		.image-container {
+            position: relative;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .image-container:hover .image {
+            opacity: 0.3;
+        }
+
+        .image-container:hover .middle {
+            opacity: 1;
+        }
+		</style>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-153067337-1');
+	</script>
+</head>
+<body style="overflow-x:hidden;">
+    <!--====== PRELOADER PART START ======-->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+    <!--====== header ======-->
+{% include "header.html" %}
+	<!--======End Header ======-->
+	<br><br><br><br><br><br><br>
+	<section class="blog_list_page services">
+		<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="card" style="<div class=&quot;card&quot; style=&quot;position: relative; box-shadow: 5px 8px 21px #dee2e6;display: flex;
+    -ms-flex-direction: column;flex-direction: column;min-width: 0;word-wrap: break-word;background-color: #fff;background-clip: border-box;border: 1px solid rgba(0,0,0,.125);
+    border-radius: 10px;&quot;>;">
+							<div class="card-body">
+								<div class="card-title mb-4">
+									<div class="d-flex justify-content-start">
+										<div class="image-container">
+											<img src="http://placehold.it/150x150" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+											<div class="middle">
+												<input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
+												<input type="file" style="display: none;" id="profilePicture" name="file" />
+											</div>
+										</div>
+										<div class="userData ml-3">
+											<h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="javascript:void(0);">Admin</a></h2>
+											<p class="d-block"> <strong>Email  :  </strong>{{user.email}}</p>
+											<p class="d-block"> <strong>Contact Number :  </strong>{{data.phone_number}}</p>
+											<br>
+											<a href="{% url 'edit_profile' %}"><div class="form-submit pull-left"><button type="submit"  name="submit" class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Profile <i class="icon-next"></i></button></div></a>
+										</div>
+										<div class="ml-auto">
+											<input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<div class="tab-content ml-1" id="myTabContent">
+											<div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">First name</label>
+													</div>
+													<div class="col-md-8 col-6">
+													{{user.first_name}}
+													</div>
+												</div>
+												<hr />
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">Last Name</label>
+													</div>
+													<div class="col-md-8 col-6">
+													{{user.last_name}}
+													</div>
+												</div>
+												<hr />
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">Username</label>
+													</div>
+													<div class="col-md-8 col-6">
+													{{user.username}}
+													</div>
+												</div>
+												<hr />
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">Email</label>
+													</div>
+													<div class="col-md-8 col-6">
+													{{user.email}}
+													</div>
+												</div>
+												<hr />
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">Password</label>
+													</div>
+													<div class="col-md-8 col-6">
+														**********
+													</div>
+												</div>
+												<hr />
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">Confirm Password</label>
+													</div>
+													<div class="col-md-8 col-6">
+														**********
+													</div>
+												</div>
+												<hr />
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">Phone number</label>
+													</div>
+													<div class="col-md-8 col-6">
+													{{data.phone_number}}
+													</div>
+												</div>
+												<hr />
+												<div class="row">
+													<div class="col-sm-3 col-md-2 col-5">
+														<label style="font-weight:bold;">Designation</label>
+													</div>
+													<div class="col-md-8 col-6">
+													{{data.location}}
+													</div>
+												</div>
+												<hr />
+												<div class="col-md-12">
+													<div class="single_form">
+														<button class="main-btn">Submit</button>
+													</div> <!-- single form -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    </section>
+	<br><br>
+    <!--====== Blog List Page PART ENDS ======-->
+	<script>
+			$(document).ready(function () {
+            $imgSrc = $('#imgProfile').attr('src');
+            function readURL(input) {
+
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('#imgProfile').attr('src', e.target.result);
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $('#btnChangePicture').on('click', function () {
+                // document.getElementById('profilePicture').click();
+                if (!$('#btnChangePicture').hasClass('changing')) {
+                    $('#profilePicture').click();
+                }
+                else {
+                    // change
+                }
+            });
+            $('#profilePicture').on('change', function () {
+                readURL(this);
+                $('#btnChangePicture').addClass('changing');
+                $('#btnChangePicture').attr('value', 'Confirm');
+                $('#btnDiscard').removeClass('d-none');
+                // $('#imgProfile').attr('src', '');
+            });
+            $('#btnDiscard').on('click', function () {
+                // if ($('#btnDiscard').hasClass('d-none')) {
+                $('#btnChangePicture').removeClass('changing');
+                $('#btnChangePicture').attr('value', 'Change');
+                $('#btnDiscard').addClass('d-none');
+                $('#imgProfile').attr('src', $imgSrc);
+                $('#profilePicture').val('');
+                // }
+            });
+        });
+		</script>
+		<script>
+			(function($) {
+				'use strict';
+				jQuery(document).on('ready', function(){
+					$('a.page-scroll').on('click', function(e){
+						var anchor = $(this);
+						$('html, body').stop().animate({
+							scrollTop: $(anchor.attr('href')).offset().top - 50
+						}, 1500);
+						e.preventDefault();
+					});
+				});
+			})(jQuery);
+		</script>
+    <!--====== Footer PART START ======-->
+	 <!--====== Blog List Page PART ENDS ======-->
+    <!--====== Footer PART START ======-->
+ {% include "footer.html" %}
+    <!--====== Footer PART ENDS ======-->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    <!--====== jquery js ======-->
+   <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+	<script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <!--====== Bootstrap js ======-->
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <!--====== Slick js ======-->
+     <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <!--====== Magnific Popup js ======-->
+     <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <!--====== Counter Up js ======-->
+     <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <!--====== Nice Select js ======-->
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <!--====== Count Down js ======-->
+     <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+    <!--====== Appear js ======-->
+      <script src="{% static 'assets/js/jquery.appear.min.js' %}"></script>
+    <!--====== Main js ======-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
